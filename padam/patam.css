@@ -1,0 +1,340 @@
+@font-face {
+    font-family: "Thai-Dye";
+    src: url("../fonts/HFFThaiDye.ttf");
+  }
+
+@font-face {
+    font-family: "Arima";
+    src: url("../fonts/ArimaMadurai-Medium.ttf");
+  }
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 1.4vw;}
+  }
+
+body, html {
+  font-family: "Arima";
+  height: 100%;
+  background-color: #F0F3F5;
+  font-size: 1.5vw;
+}
+
+.bgimg {
+  background-image: url("../img/bg-patam.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  
+figure { 
+  display: table;
+  width: 40%;
+  max-width: 80%;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 1em;
+}
+  
+figcaption {
+  display: table;
+  font-family: "Arima";
+  background-color: #F0F3F5;
+  color: #111;
+  padding: 2px;
+  text-align: left;
+  font-style: normal;
+  font-size: 1.2vw;
+  line-height: 1.5em;
+  height: auto;
+  word-wrap: break-word;
+}
+  
+  .left {
+    float: left;
+  }
+  
+  .right {
+    float: right;
+  }
+
+  
+
+h2 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-family: "Thai-Dye";
+  color: #111;
+}
+
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 1.6vw "Thai-Dye";
+    color: #111;
+  }
+  
+  .dropbtn {
+    font-family: "Thai-Dye";
+    background-color: #F0F3F5;
+    color: #111;
+    padding: 16px;
+    font-size: 1.6vw;
+    cursor: pointer;
+    border: none;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #F0F3F5;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #007A7A;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F0F3F5;
+    min-width: 260px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.6vw;
+  }
+  
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
+  .container {
+    display: block;
+    font-family: "Arima";
+    background-color: #F0F3F5;
+    opacity: .975;
+    color: #000;
+    position: relative;
+    top: 10%;
+    width: 100%;
+    max-width: 90%;
+    height: 80%;
+    padding: 20px;
+    border-radius: 5px; 
+    overflow: auto;
+    line-height: 1.8em;
+  }
+  
+  .footer {
+    font-family: "Arima";
+    padding: 10px;
+    background-color: #F0F3F5;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  hr {
+    height: .75px;
+    background-color: #888;
+    border: none;
+  }
+
+
+  a {
+    color: #007A7A;
+    position: relative;
+    text-decoration: underline;
+    display: inline-block;  
+  }
+
+  a:hover {
+    color: #019ea0;
+    position: relative;
+    text-decoration: underline;
+    display: inline-block;
+  }
+
+a.nav {
+    color: #007A7A;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;  
+  }
+
+a.nav:hover {
+    color: #019ea0;
+    position: relative;
+    text-decoration: underline;
+    display: inline-block;
+  }
+
+
+  .tab {
+    text-indent: 2.0cm;
+    margin-left: 1.0cm;
+  }
+
+  
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #36454F; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #71797E; 
+}
+
+
+.defBtn {
+  font-family: "Arima";
+  font-weight: bolder;
+  background-color: #f2f3bf;
+  color: #000;
+  padding: 0px;
+  font-size: 1.6vw;
+  cursor: pointer;
+  border: 0px;
+  pointer-events: all;
+}
+
+a:target {
+  font-family: "Arima";
+  color: #007A7A;
+  background: #F0F3F5;
+}
+
+.divider{
+  width:80px;
+  height:auto;
+  display:inline-block;
+}
+
+.row { 
+  min-width: 100%;
+  text-align: center; 
+}
+
+
+
+/*Marginal Notes on Desktop*/
+aside, .aside {
+  display: inline;
+  float: right;
+  position: relative;
+  width: 22vw;
+  margin-right: -23vw;
+  font-size: 1.1vw;
+  color: #027272;
+  line-height: 1.6em;
+}
+
+/*Marginal Notes on mobile*/
+@media (max-width: 768px) {
+  aside, .aside {
+    display: block;
+    float: none;
+    margin: 5% 10% 5% 10%;
+    width: 80%;
+    font-size: 1vw;
+    color:#027272;
+    line-height: 1.6em;
+  }
+}
+
+.margin {
+  margin-right: 28%;
+}
+
+
+a.button1{
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family: "Arima";
+    font-weight: 300;
+    color:#FFFFFF;
+    background-color:#36454F;
+    text-align:center;
+    transition: all 0.2s;
+    }
+    a.button1:hover{
+    background-color:#71797E;
+    }
+    a.button1:active{
+    color:#BBBBBB;
+    border-color:#BBBBBB;
+    }
+
+    @media all and (max-width:30em){
+    a.button1 { display:block; margin:0.2em auto; }
+    }
+
+
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.video-container { 
+  position: relative; 
+  padding-bottom: 56.25%; 
+  padding-top: 30px;
+  height: 0; 
+  overflow: hidden; 
+}
+
+.video-container iframe, .video-container object, .video-container embed { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%
+}
