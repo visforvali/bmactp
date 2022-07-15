@@ -1,0 +1,377 @@
+@font-face {
+    font-family: "Thai-Dye";
+    src: url("../fonts/HFFThaiDye.ttf");
+  }
+
+@font-face {
+    font-family: "Arima";
+    src: url("../fonts/ArimaMadurai-Medium.ttf");
+  }
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 1.4vw;}
+  }
+
+  body, html {
+    font-family: "Arima";
+    height: 100%;
+    background-color: #fffaf0;
+    font-size: 1.5vw;
+  }
+
+  .bgimg {
+    background-image: url("../img/bg-vali.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  figure { 
+    width: 90%;
+    border: thin silver solid;
+    margin: 0.5em;
+    padding: 1em;
+  }
+    
+  figcaption {
+    font-family: "Arima";
+    background-color: #fffaf0;
+    color: #111;
+    padding: 2px;
+    text-align: left;
+    font-style: normal;
+    font-size: 1.2vw;
+    line-height: 1.5em;
+    height: auto;
+    word-wrap: break-word;
+  }
+  
+
+  h2 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: "Thai-Dye";
+    color: #111;
+  }
+
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 1.6vw "Thai-Dye";
+    color: #111;
+  }
+  
+  .dropbtn {
+    font-family: "Thai-Dye";
+    background-color: #fffaf0;
+    color: #111;
+    padding: 16px;
+    font-size: 1.6vw;
+    cursor: pointer;
+    border: none;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #fffaf0;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #b88a1f;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fffaf0;
+    min-width: 260px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.6vw;
+  }
+  
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
+  .container {
+    display: block;
+    font-family: "Arima";
+    background-color: #fffaf0;
+    color: #000;
+    position: relative;
+    top: 10%;
+    width: 100%;
+    max-width: 90%;
+    height: 80%;
+    padding: 20px;
+    border-radius: 5px; 
+    overflow: auto;
+    line-height: 1.8em;
+  }
+  
+.footer {
+    font-family: "Arima";
+    padding: 10px;
+    background-color: #fffaf0;
+    overflow: hidden;
+  }
+
+  hr {
+    height: .75px;
+    background-color: #888;
+    border: none;
+  }
+
+  a {
+    color: #906C18;
+    position: relative;
+    text-decoration: underline;
+    display: inline-block;
+    text-indent: 0em;  
+  }
+
+  a:hover {
+    color: #6E5212;
+    position: relative;
+    text-decoration: underline;
+    display: inline-block;
+  }
+
+
+a.nav {
+    color: #906C18;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;  
+  }
+
+a.nav:hover {
+    color: #6E5212;
+    position: relative;
+    text-decoration: underline;
+    display: inline-block;
+  }
+
+
+
+
+
+
+  .tab {
+    text-indent: 2.0cm;
+    margin-left: 1.0cm;
+  }
+
+
+  blockquote {
+    background: #ecc441;
+    border-left: 10px solid rgb(46, 45, 45);
+    margin: 1.5em 3em 1.5em 5em;
+    padding: 0.5em 10px;
+    quotes: "\201C" "\201D";
+  }
+  
+  blockquote:before {
+    color: rgb(46, 45, 45);
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+  blockquote p {
+    display: inline;
+  }
+
+    
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #665d1e; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b88a1f; 
+}
+
+
+.defBtn {
+  font-family: "Arima";
+  font-weight: bolder;
+  background-color: #f2f3bf;
+  color: #000;
+  padding: 0px;
+  font-size: 1.6vw;
+  cursor: pointer;
+  border: 0px;
+  pointer-events: all;
+}
+
+a:target {
+  font-family: "Arima";
+  color: #906C18;
+  background: #fffaf0;
+}
+
+.divider{
+  width:80px;
+  height:auto;
+  display:inline-block;
+}
+
+.row { 
+  min-width: 100%;
+  text-align: center; 
+}
+
+
+
+
+/*Marginal Notes on Desktop*/
+aside, .aside {
+  display: inline;
+  float: right;
+  position: relative;
+  width: 22vw;
+  margin-right: -23vw;
+  font-size: 1.1vw;
+  color: #aa4604;
+  line-height: 1.6em;
+}
+
+/*Marginal Notes on mobile*/
+@media (max-width: 768px) {
+  aside, .aside {
+    display: block;
+    float: none;
+    margin: 5% 10% 5% 10%;
+    width: 80%;
+    font-size: 1vw;
+    color:#aa4604;
+    line-height: 1.6em;
+  }
+}
+
+.margin {
+  margin-right: 28%;
+}
+
+  
+.flex-container {
+    display: flex;
+  }
+
+.flex-container > div {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .myButton {
+	box-shadow: 3px 4px 0px 0px #4f360b;
+	background:linear-gradient(to bottom, #ffe047 5%, #b88a1f 100%);
+	background-color:#ffe047;
+	border-radius:18px;
+	border:1px solid #e6a500;
+	display:inline-block;
+	cursor:pointer;
+	color:#333;
+	font-family:"Arima";
+	font-size:1.6vw;
+    font-weight:bolder;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #d1aa49;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #b88a1f 5%, #ffe047 100%);
+	background-color:#b88a1f;
+  text-decoration: none;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+    .hoverinfo {
+      font-size: 1.5vw;
+      color: #000;
+      cursor: pointer;
+    }
+    
+    .hoverinfo p {
+      display: none;
+      color: #aa4604;
+    }
+    
+    .hoverinfo:hover p {
+      background-color: #e6dacb;
+      display: block;
+    }
+
+.player {
+  height: 30px;
+  width: 300px;
+}
+
+
+.table, td {
+  padding: 10px;
+  width: 70%;
+  vertical-align: top;
+  text-align: left;
+  color: #000;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.video-container { 
+  position: relative; 
+  padding-bottom: 56.25%; 
+  padding-top: 30px;
+  height: 0; 
+  overflow: hidden; 
+}
+
+.video-container iframe, .video-container object, .video-container embed { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%
+}
