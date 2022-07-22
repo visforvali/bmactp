@@ -37,23 +37,23 @@ body, html {
 }
 
 /* Scrollbar */
-  
+
 ::-webkit-scrollbar {
   width: 15px;
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
- 
+
 ::-webkit-scrollbar-thumb {
-  background: #A81C1C; 
+  background: #A81C1C;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #da0f0f; 
+  background: #da0f0f;
 }
 
 /* Dropdown Menu & Navigation */
@@ -155,7 +155,7 @@ a.dropdown-content:hover {
 
 .custom-toggler.navbar-toggler {
   border-color: rgb(168, 28, 28);
-} 
+}
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(168,28,28, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
@@ -165,7 +165,7 @@ a.dropdown-content:hover {
 #background {
   background-image: url("img/bg-main.jpg");
   height: 100%;
-  opacity: .95;  
+  opacity: .95;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -179,7 +179,7 @@ a.dropdown-content:hover {
   position: relative;
   top: 10%;
   max-width: 90%;
-  border: none; 
+  border: none;
   border-radius: 25px;
   overflow: auto;
 }
@@ -221,7 +221,7 @@ h1 {
   font-weight: bolder;
   letter-spacing: 5px;
   color: #111;
-  
+
 }
 
 h2 {
@@ -244,7 +244,7 @@ a {
   color: #B31414;
   position: relative;
   text-decoration: underline;
-  display: inline-block;  
+  display: inline-block;
 }
 
 a:hover {
@@ -253,7 +253,7 @@ a:hover {
   text-decoration: underline;
 }
 
-a.disabled {
+a.hopscotch {
   display: block;
   padding: 5px;
   color: #B31414;
@@ -263,7 +263,7 @@ a.disabled {
   text-align: right;
 }
 
-a.disabled:hover {
+a.hopscotch:hover {
   color: gray;
   cursor: help;
 }
@@ -294,13 +294,13 @@ a.fn:hover {
 
 
 
-  figure { 
+  figure {
     width: 55%;
     border: thin silver solid;
     margin: 0.5em;
     padding: 1em;
   }
-  
+
   figcaption {
     font-family: "Arima";
     background-color: #F2F3BF;
@@ -313,11 +313,11 @@ a.fn:hover {
     height: auto;
     word-wrap: break-word;
   }
-  
+
   .left {
     float: left;
   }
-  
+
   .right {
     float: right;
   }
@@ -360,7 +360,7 @@ hr {
 
 
 
-  
+
 
 
 
@@ -390,9 +390,9 @@ ol.a {
   display:inline-block;
 }
 
-.row { 
+.row {
   min-width: 100%;
-  text-align: center; 
+  text-align: center;
 }
 
 
@@ -496,5 +496,3 @@ aside, .aside {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-
