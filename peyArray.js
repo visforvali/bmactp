@@ -46,7 +46,7 @@ var links=new Array()
     links[42]="padam/intro.html"
     links[43]="padam/for-whose-gaze.html"
     links[44]="padam/art.html"
-    links[45]="padam/gateways.html"
+    links[45]="padam/xrays.html"
     links[46]="padam/mri.html"
     links[47]="padam/self-tracking.html"
     links[48]="padam/hollow-me-p.html"
@@ -140,6 +140,5 @@ var links=new Array()
     links[136]="references.html"
     links[137]="collaborators.html"
     links[138]="how-to-cite.html"
-
 window.location=links[myrandom]
 }
