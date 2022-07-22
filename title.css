@@ -2,19 +2,19 @@
     font-family: "Thai-Dye";
     src: url("fonts/HFFThaiDye.ttf");
   }
-  
+
 @font-face {
     font-family: "Arima";
     src: url("fonts/ArimaMadurai-Medium.ttf");
   }
-  
+
 /* Media Queries */
-  
+
 @media (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 1.4vw;}
   }
-  
+
 @media screen and (max-width: 575.98px) {
     .bgimg-title {
       background-image: url("img/bg-title-sm.jpg") !important;
@@ -24,7 +24,7 @@
       background-size: cover;
     }
   }
-  
+
 
 body, html {
     font-family: "Arima";
@@ -33,49 +33,49 @@ body, html {
     background-color: #EFF4EB;
     font-size: 1.5vw;
   }
-  
-  
+
+
 .bgimg-title {
     background-image: url("img/bg-title.png");
     display: block;
     height: 100%;
-    opacity: 1;  
+    opacity: 1;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
+
 /* Scrollbar */
-    
+
 ::-webkit-scrollbar {
     width: 15px;
   }
-  
+
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
+    box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
   }
-   
+
 ::-webkit-scrollbar-thumb {
-    background: #A81C1C; 
+    background: #A81C1C;
     border-radius: 10px;
   }
-  
+
 ::-webkit-scrollbar-thumb:hover {
-    background: #da0f0f; 
+    background: #da0f0f;
   }
-  
+
 /* Dropdown Menu & Navigation */
-  
+
 .navbar {
     background-color: #EFF4EB;
     color: #111 !important;
   }
-  
+
 .nav-link {
     color: #111;
   }
-  
+
 .dropdown-toggle {
     font-family: "Thai-Dye";
     background-color: #EFF4EB;
@@ -85,12 +85,12 @@ body, html {
     border: none;
     padding: 5px;
   }
-  
+
 .dropdown-toggle:hover {
     color: #A81C1C;
     text-decoration: none;
   }
-  
+
 .dropdown-toggle:focus {
     color: #A81C1C;
     border-style: solid;
@@ -100,60 +100,60 @@ body, html {
     border-radius: 0.3vw;
     border-color: #A81C1C;
   }
-  
+
 .dropdown-menu {
     font: 1.6vw "Arima";
     background-color: #EFF4EB;
     color: #111;
   }
-  
+
 .dropdown-menu:hover .a {
     text-decoration: none;
   }
-  
+
 a.dropdown-content:hover {
     text-decoration: none;
   }
-  
+
 .dropdown-menu>li>a {
     color: #111;
     text-decoration: none;
     padding: 3px;
     font-size: 1.6vw;
   }
-  
+
 .dropdown-menu>li>a:hover {
     background-color: #A81C1C;
     color: #EFF4EB;
     text-decoration: none;
   }
-  
+
 .nav-link-dir {
     font-family: "Arima";
     color: #A81C1C;
     text-decoration: none;
     padding: 0.3vw;
   }
-  
+
 .nav-link-dir:hover {
     font-family: "Arima";
     color: #D81818;
     text-decoration: none;
   }
-  
+
 .navbar-form {
     font-family: "Arima";
     background-color: transparent;
     padding: 1vw;
   }
-  
+
 .form-control {
     width: 20vw;
     background-color: #fff;
     border: solid;
     border-color: #A81C1C;
   }
-  
+
 .form-control:focus {
     width: 20vw;
     background-color: #fff;
@@ -161,23 +161,23 @@ a.dropdown-content:hover {
     border-color: #A81C1C;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
   }
-  
+
 .custom-toggler.navbar-toggler {
     border-color: rgb(168, 28, 28);
-  } 
+  }
 
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(168,28,28, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
-  
+
 /* Footer */
-  
+
 .footer {
     font: 1vw "Arima";
     background-color: #EFF4EB;
     margin-top: auto;
   }
-  
+
 .footer p {
     margin-bottom: 0;
   }
@@ -188,7 +188,7 @@ a {
     color: #B31414;
     position: relative;
     text-decoration: underline;
-    display: inline-block;  
+    display: inline-block;
   }
 
 a:hover {
