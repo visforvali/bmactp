@@ -28,8 +28,7 @@
 
 body, html {
     font-family: "Arima";
-    
-    height: 80vh;
+    height: 90vh;
     width: 100%;
     background-color: #EFF4EB;
     font-size: 1.5vw;
@@ -176,6 +175,7 @@ a.dropdown-content:hover {
 .footer {
     font: 1vw "Arima";
     background-color: #EFF4EB;
+    margin-top: auto;
   }
   
 .footer p {
