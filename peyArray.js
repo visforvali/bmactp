@@ -1,5 +1,5 @@
 function randomlinks(){
-var myrandom=Math.round(Math.random()*15)
+var myrandom=Math.round(Math.random()*138)
 var links=new Array()
     links[0]="index.html"
     links[1]="how-to-read.html"
