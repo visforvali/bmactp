@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>6. Lexicon</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./peyArray.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="shortcut icon" href="img/site.ico" type="image/x-icon"/>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm sticky-top">
+    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fa fa-search"></i></a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <form class="navbar-form" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Enna?">
+                </div>
+              </form>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item p-1" href="how-to-read.html">Instructions for Reading</a></li>
+            <li><a class="dropdown-item p-1" href="acknowledgments.html">Acknowledgments</a></li>
+            <li><a class="dropdown-item p-1" href="warnings.html">Content Warnings</a></li>
+            <li><a class="dropdown-item p-1" href="cast.html">Cast of Characters</a></li>
+            <li><a class="dropdown-item p-1" href="artist-statement.html">Artist Statement</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Guiding Concepts & Frameworks</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item p-1" href="lexicon.html">Lexicon</a></li>
+            <li><a class="dropdown-item p-1" href="decolonial.html">Decolonial Praxis</a></li>
+            <li><a class="dropdown-item p-1" href="autoethnography.html">Autoethnography</a></li>
+            <li><a class="dropdown-item p-1" href="fictocriticism.html">Fictocriticism</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a lang="ta" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Kandams</a>
+          <ul class="dropdown-menu">
+            <li><a lang="ta" class="dropdown-item p-1" href="adi/adi.html">Adi</a></li>
+            <li><a lang="ta" class="dropdown-item p-1" href="vali/vali.html">Vali</a></li>
+            <li><a lang="ta" class="dropdown-item p-1" href="padam/padam.html">Padam</a></li>
+            <li><a class="dropdown-item p-1" href="illusio/illusio.html">Illusio</a></li>
+            <li><a class="dropdown-item p-1" href="misability/misability.html">Misability</a></li>
+            <li><a lang="ta" class="dropdown-item p-1" href="neethikkathai/neethikkathai.html">Neethikkathai</a></li>
+            <li><a class="dropdown-item p-1" href="conclusions.html">Conclusions</a></li>
+            <li><a class="dropdown-item p-1" href="epilogue.html">Epilogue</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Credits</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item p-1" href="references.html">References</a></li>
+            <li><a class="dropdown-item p-1" href="collaborators.html">Collaborators</a></li>
+            <li><a class="dropdown-item p-1" href="how-to-cite.html">How to Cite</a></li>
+          </ul>
+        </li>   
+      </ul>
+      <a class="nav-link-dir" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a class="nav-link-dir" href="javascript:history.back()"><i class="fa fa-arrow-left"></i> Back</a>
+      <a class="nav-link-dir" href="#"><i class="fa fa-arrow-right"></i> Next</a>
+      <a class="nav-link-dir" href="#" value="random link!" onClick="randomlinks()"><i class="fas fa-ghost"></i> <span lang="ta">Pey Pidichittu</span></a>
+      <a class="nav-link-dir"></a>
+    </div>
+  </nav>
+<div id="background"></div>
+<div class="container p-3 my-5">
+  <div id="scrollbar">
+    <div id="bar"></div>
+  </div>
+  <article>
+    <h1 class="text-center p-3"><span style="font-family:'Arima'">6.</span> Lexicon</h1>
+    <section>
+      <p>The following terms and definitions are organized in alphabetical order by category. Click the category titles in the sidebar to open each section.</p>
+    </section>   
+    <ul class="nav nav-pills nav-justified mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-transliterate-tab" data-bs-toggle="pill" data-bs-target="#transliteration" type="button" role="tab">Transliteration</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-tamil-tab" data-bs-toggle="pill" data-bs-target="#tamil" type="button" role="tab">Tamil and Sanskrit</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-medical-tab" data-bs-toggle="pill" data-bs-target="#medical" type="button" role="tab">Medical Jargon</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-theory-tab" data-bs-toggle="pill" data-bs-target="#theory" type="button" role="tab">Theoretical Terms</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-pem-tab" data-bs-toggle="pill" data-bs-target="#pem-blends" type="button" role="tab">PEM Blends</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="transliteration" role="tabpanel">
+      <section>
+        <p>Many scholars transliterate Tamil using the International Phonetic Alphabet (IPA); my transliteration reflects my home speech. I use the romanized spellings my Tamil-speaking parents taught me, phonetic cues for non-Tamil speakers unfamiliar with the IPA, and the grammatically incorrect idiosyncrasies of my Tamil-English code-meshing, like applying English plural rules to Tamil words. For example, I pluralize <span lang="ta">kandam</span> (chapter) like a singular noun, <span lang="ta">kandam<i>s</i></span>, treat <span lang="ta">kathai</span> (story) like an unchanging irregular plural, and rarely conjugate Tamil phrases to match English parts of speech.</p>
+        <p>For similar reasons, I limit my use of diacritical marks in common mythological names, titles, and concepts (<span lang="sa">Parashurama</span> instead of <span lang="sa">Paraśurāma</span>; <span lang="grc">metis</span> instead of <span lang="grc">mētis</span>. I use the International Alphabet of Sanskrit Transliteration (IAST) for obscurer words and titles. Tamil words that retain traces of their Sanskrit origins, like <span lang="ta">kshatriya</span>, are phonetically transliterated.</p>
+      </section>
+      <section>
+        <h3>Note on Pronunciation</h3>
+        <p>There are 216 letters in the Tamil alphabet, including sounds that don't map onto the English language. My romanization doesn't capture all of the nuances of Tamil sounds, but this table serves as an approximate pronunciation guide:</p>
+        <table class="table table-hover">
+          <caption>Table of Pronunciation</caption>
+          <thead>
+            <tr>
+              <th scope="col"><b>Tamil Transliteration</b></th>
+              <th scope="col"><b>English Pronunciation</b></th>
+            </tr>
+          </thead>
+        <tbody>
+          <tr>
+            <td>a</td>
+            <td>g<u>u</u>t, c<u>u</u>nning</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>aa</td>
+            <td>h<u>o</u>spital, c<u>o</u>nference</td>
+          </tr>
+          <tr>
+            <td>i (middle of a word)</td>
+            <td>cl<u>i</u>n<u>i</u>c, chron<u>i</u>c</td>
+          </tr>
+          <tr>
+            <td>i (end of a word)</td>
+            <td>decolon<u>i</u>al, b<u>e</u>ing</td>
+          </tr>
+          <tr>
+            <td>ee</td>
+            <td>f<u>ee</u>l, h<u>ea</u>l</td>
+          </tr>
+          <tr>
+            <td>ai (beginning of word)</td>
+            <td>t<u>i</u>me, <u>I</u></td>
+          </tr>
+          <tr>
+            <td>ai, ay, ey (middle/end of word)</td>
+            <td>p<u>ai</u>n, br<u>ai</u>n</td>
+          </tr>
+          <tr>
+            <td>u</td>
+            <td>c<u>ou</u>ld, b<u>oo</u>k</td>
+          </tr>
+          <tr>
+            <td>oo</td>
+            <td>st<u>oo</u>l, sch<u>oo</u>l</td>
+          </tr>
+          <tr>
+            <td>o</td>
+            <td>fibr<u>o</u>, gh<u>o</u>st</td>
+          </tr>
+        </tbody>
+        </table>
+        <a href="#" class="disabled" onclick="return false;">(&#8211;5. Artist Statement)</a>
+      </section>
+    </div>
+    <div class="tab-pane fade" id="tamil" role="tabpanel">
+      <section>
+        <p><b><span lang="ta">Aavi ஆவி</span></b>: <span class="ta">Aavi</span> refers to "the spirit of a dead person" and "steam." This project often substitutes <span lang="ta">aavi, pey, and peyththai</span> for <i>ghostbody</i> to recognize the nuances of ghostbodies in Tamil and other nonwhite cultures.</p>
+        <p><b><span lang="ta">Adi அடி</span></b>: <span lang="ta">Adi</span> means most simply "to hit." I grew up with this meaning, heard by Tamil children everywhere, but its connotations are multiple. A military attack. A strike. A form of protest, or counterstrike. A euphemism used to describe rape.</p>
+        <p><b><span lang="ta">Aiyo ஐயோ</span></b>: A word with breathtaking range, <span lang="ta">aiyo</span> is a broad-spectrum interjection expressing distress, regret, grief, anger, envy, disbelief, disgust, and less articulable emotions without veering into obscenity. <span lang="ta">Appa</span> and <span lang="ta">Amma</span> often exclaimed <i><span lang="ta">ai aiyo</span></i> or <i><span lang="ta">aiyo, paavam</span></i>, sucked sharply through the teeth, some utterance of pity, shock, and pain.</p>
+        <p><b><span lang="ta">Amma அம்மா</span></b>: Mother.</p>
+        <p><b><span lang="ta">Appa அப்பா</span></b>: Father.</p>
+        <p><b><span lang="sa">Astra अस्त्र</span></b>: A Sanskrit word, an <span lang="sa">astra</span> is a celestial weapon presided over by a specific deity who imbues it with mystical effects. <span lang="sa">Astras</span> are executed under specific conditions through mantras that invoke the presiding deity and can only be countered with other <span lang="sa">astras</span>. They are catastrophically powerful and violating their governing conditions can be fatal. Warriors obtain <span lang="sa">astras</span> in two ways: (1) directly from the presiding deity, the way <span lang="sa">Indra</span> bestowed <span lang="sa">Vajra</span> on <span lang="sa">Arjuna</span>, or (2) through the <span lang="ta">guru-sishya</span> (teacher-student) tradition, where the <span lang="ta">guru</span> reveals an <span lang="sa">astra's</span> mantra and usage to disciples of worthy character, the way <span lang="sa">Parashurama</span> taught <span lang="sa">Karna</span> the <span lang="sa">Bhargavastra</span>. In <i><span lang="sa">The Mahabharata</span></i>, warriors like <span lang="sa">Karna</span> and <span lang="sa">Arjuna</span> might be powerfully built, but they rely heavily on their cognitive ability and memory recall when waging war. They both possess a <span lang="sa">Brahmastra</span>, a weapon imbued with apocalyptic power and intended only as a last resort, which requires immense concentration, focused intent, a desire to uphold dharma, and the correct recitation of the mantra. But <span lang="sa">Karna</span> was cursed to forgetfulness at the critical moment, because his pain tolerance gave him away as a warrior to his <span lang="sa">guru Parashurama</span>, who hated the <span lang="sa">kshatriya</span> warrior class. It didn't matter that <span lang="sa">Karna</span> didn't know his own caste. <span lang="sa">Karna</span> does not express pain again after this curse, and because of this curse, he forgets the <span lang="sa">Brahmastra</span> mantra in his final confrontation with <span lang="sa">Arjuna</span>, and is killed by <span lang="sa">Arjuna's Anjalikastra</span>.</p>
+        <p class="tab">If there's a lesson here, it's that both enduring and expressing pain are punishable offenses, and survival is a matter of laser focus. I too am destined to forget at the critical moment &mdash; presentations, defenses, medical consultations &mdash; but my pain tolerance has additionally earned me the curse of being forgotten. In academia and biomedicine, the chronic conditions I have, which make me chronically forgetful, erase me as both contender and priority.</p>
+        <p><b><span lang="ta">Enna seyrathu என்ன செய்ரது?</span></b>: Meaning <i>what to do?</i>, <span lang="ta">enna seyrathu?</span> is a rhetorical question, reflecting anxiety, frustration, and/or resignation with a situation that must be accepted. After fibromyalgia crept into me, this is what my parents said every time the lab work and imaging tests turned up nothing. I silently say it to myself every day. It's my orientation towards the unforgiving realities of chronically ill life.</p>
+        <p><b><span lang="ta">Eylum ஏலும்</span> and <span lang="ta">Eylaathu ஏலாது</span></b>: <span lang="ta">Appa</span> and <span lang="ta">Amma</span> don't remember encountering Tamil words for disability in colloquial conversation, and I never heard such words growing up. They used <i><span lang="ta">eylum</span></i> (can) and <i><span lang="ta">eylaathu</span></i> (can't). Posed as questions, moaned as complaints, these words help me imagine myself in terms of fluctuating capacity instead of the disempowering parameters of the medical model of disability.</p>
+        <p><b><span lang="ta">Kandam கண்டம்</span></b>: Chapter. Denotes the six chapters of the <span lang="ta"><i>Ramavataram</i></span> or <span lang="ta"><i>Kamba Ramayanam</i></span>, a Tamil epic based on <span lang="sa">Valmiki's <i>Ramayana</i></span>.</p>
+        <p><b><span lang="ta">Kathai கதை</span></b>: Story.</p>
+        <p><b><span lang="ta">Neethikkathai நீதிக்கதை</span></b>: Parable, fable, or moral story.</p>
+        <p><b><span lang="ta">Nohuthu நோகுது</span></b>: From the root <i><span lang="ta">no நோ</span></i>, <span lang="ta">nohuthu</span> is an exclamation of profound pain. <span lang="ta"><i>Enakku engum nohuthu</i></span> (I feel pain all over). Countless times I've heard <span lang="ta">Amma</span> gasp at the kitchen counter, <span lang="ta"><i>udambu nohuthu</i></span>, <span lang="ta"><i>vayiru nohuthu</i></span>, back <span lang="ta"><i>nohuthu</i></span>, or just <i><span lang="ta">nohuthu</span></i>, remaking pain as a presence, a cohabitation, a possession.
+        <p><b><span lang="ta">Paavam பாவம்</span></b>: Innocent, misfortunate, poor, helpless, pitiable. <span lang="ta">Paavam</span> is a catch-all for major and minor tragedies.
+        <p><b><span lang="ta">Padalam படலம்</span></b>: Section. Each <span lang="ta">kandam</span> of the <span lang="ta"><i>Kamba Ramayanam</i></span> is divided into 123 sections, or <span lang="ta">padalams</span>.</p>
+        <p><b><span lang="ta">Padam படம்</span></b>: Picture, photograph, film.</p>
+        <p><b><span lang="ta">Pey பேய்</span></b>: In Tamil folklore, <span lang="ta">pey</span> refers to a malevolent ghost. This project often substitutes <span lang="ta">pey, aavi, and peyththai</span> for <i>ghostbody</i> to recognize the nuances of ghostbodies in Tamil and other nonwhite cultures.</p>
+        <p><b><span lang="ta">Pey Pidichittu பேய் பிடிச்சிட்டு</span></b>: <span lang="ta">Pey pidichittu</span> is the spoken form of <i>caught by a ghost</i>, but in certain spaces, it means <i>seized by a deity</i>. <span lang="ta">Amma</span> says one of her sisters was seized during festival time at <span lang="ta">Kannagi Amman Kovil</span> in <span lang="ta">Vattappalai</span>, when there is a greater chance the goddess might possess you, foretell your future, and heal your illnesses and pains. This project uses <span lang="ta">pey pidichittu</span> to compare FMS/ME to the state of being (or being possessed by) ghostbody and god and never knowing which is ascendant.</p>
+        <p><b><span lang="ta">Peyththai</span></b>: Slang for a hungry ghost, a word without a proper Tamil written equivalent. <span lang="ta">Amma</span> uses <span lang="ta">peyththai</span> the way it was used in her house growing up, playfully teasing <span lang="ta">Appa</span> in particular about his bottomless appetite. This project often substitutes <span lang="ta">pey, aavi, and peyththai</span> for <i>ghostbody</i> to recognize the nuances of ghostbodies in Tamil and other nonwhite cultures. <span lang="ta">Peyththai</span>, though, might singularly preside over my ruptured appendix, which rendered my bodymind insatiate.</p>
+        <p><b><span lang="ta">Seri சரி</span></b>: <span lang="ta">Seri</span> means <i>OK</i>, almost always accompanied by the South Asian head waggle, an ambivalent gesture that lacks a Western analog. It can mean "yes" or "maybe," substitute for "thank you," confirm that you're listening, convey enthusiasm, or politely express disagreement or refusal. Contextually, <span lang="ta">seri</span> can be similarly ambiguous. It's what I'm thinking when I say "OK" to the doctor who tells me fibromyalgia is a wastebasket diagnosis or to the professor who says "real" academics deliver conference presentations from memory. It's what I'd say if the <span lang="ta">seri seri</span> head waggle were comprehensible in Western/white spaces, to disapprove without the disrespect of a hard <i>no</i>.</p>
+        <p><b><span lang="sa">Shakti शक्ति</span></b>: A Sanskrit word, in Hinduism <span lang="sa">shakti</span> (pronounced <i><span lang="ta">shakthi</span></i> in Tamil) is the divine, generative female principle from which the primordial cosmos sprung. <span lang="sa">Shakti</span> is also the goddess who personifies the creative, sustaining, dynamic forces that move through the universe.</p>
+        <p><b><span lang="ta">Thalaiyeluththu தலையெழுத்து</span></b>: Destiny. The literal translation is <i>head writing</i>. "Life, in the form of breath, enters the infant at the time of its exit from its mother's birth canal. The planetary configurations at this moment determine the child's horoscope, which provides an approximate blueprint of his or her fate" (Daniel, 1984, p. 139).</p>
+        <p><b><span lang="ta">Thanthiram தந்திரம் / Thanthiramaana தலையெழுத்து</span></b>: <span lang="ta">Thanthiram</span> is the noun and <span lang="ta">thanthiramaana</span> is the adjective referring to cunning.</p>
+        <p><b><span lang="ta">Vali வலி</span></b>: A formal word for pain that also means strength, force, and power. For women, experiencing <span lang="ta">vali</span> is desirable as a sign of spiritual strength. Depriving oneself of <span lang="ta">vali</span> where its presence is expected &mdash; as in childbirth &mdash; depletes one's <span lang="sa">shakti</span>. <span lang="ta">Vali</span> discursively constructs women as valiant and powerful but buttresses patriarchal society by linking feminine potential to reproduction (Van Hollen, 2003, pp. 119-122). Still, <span lang="ta">vali</span> offers the fibromyalgic Tamil woman a more desirable self-concept, conflating pains and flares with dynamic, generative force.</p>
+        <p><b><span lang="ta">Uyirmey உயிர்மெய்</span></b>: Tamil is among the oldest extant languages in the world. <span lang="ta"><i>Uyirmey</i></span> is its foundational alphasyllabary and adds rhetoricity to Price's (2015) concept of the bodymind. In Tamil, the set of 12 vowels composes <span lang="ta">uyir</span> (life, soul), and the set of 18 consonants composes <span lang="ta">mey</span> (body). Together, they make <span lang="ta">uyirmey</span>, a Tamilian bodymind indistinguishable from language, intrinsically communicative. As the pained subject is popularly constructed as arhetorical, I like this implication.</p>
+      </section>
+    </div>
+    <div class="tab-pane fade" id="medical" role="tabpanel">
+      <section>
+        <p><b>Abscess</b>: Pus collected in a pocket of swollen tissue.</p>
+        <p><b>Adhesion</b>: Band of scar-like tissue fusing tissues and organs that aren't normally connected.</p>
+        <p><b>Alimentary canal</b>: Gastrointestinal tract.</p>
+        <p><b>Amylase</b>: Enzyme secreted by the pancreas whose values may be elevated in disorders of the pancreas and appendicitis.</p>
+        <p><b>Analgesia</b>: Absence of pain.</p>
+        <p><b>Analgesic</b>: Class of drugs intended to relieve pain, such as aspirin, acetaminophen (Tylenol), ibuprofen (Advil), or morphine.</p>
+        <p><b>Anesthesia</b>: Substances used to block sensation (especially pain) at the local or general level, routinely employed in modern surgeries.</p>
+        <p><b>Ankylosing spondylitis</b>: Disorder characterized by back pain, stiffness, and limited range of motion, involving swelling between the disks of the spine and in the joints where the pelvis and spine connect.</p>
+        <p><b>Arthropathy</b>: Joint disorder or disease.</p>
+        <p><b>Atrophy</b>: Deconditioning and wasting away of muscles, tissues, and/or organs due to disease, malnourishment, or aging.</p>
+        <p><b>Autoimmune disorder</b>: Disorder in which the immune system perceives healthy tissues and organs as threatening and responds by attacking, altering, and/or destroying them.</p>
+        <p><b>Autonomic nervous system</b>: The part of the nervous system that controls involuntary actions, like breathing, blood pressure, and temperature regulation. It also plays a role in fight-or-flight stress response.</p>
+        <p><b>Axillary</b>: Armpit.</p>
+        <p><b>Biomarker</b>: Distinct biological indication of a process, condition, or anomaly.</p>
+        <p><b>Biopsy</b>: Removal of a small piece of tissue for examination under a microscope.</p>
+        <p><b>Brainstem</b>: Part of the brain that joins the brain and spinal cord and controls reflexes, movement, and sensation.</p>
+        <p><b>C-reactive protein</b>: Protein secreted by the liver that, when elevated, may indicate generalized inflammation.</p>
+        <p><b>Carpal tunnel syndrome</b>: Condition of the hand and wrist in which the median nerve, which runs from the hand through the forearm, is compressed, leading to pain, tingling, numbness, and hand weakness.</p>
+        <p><b>Cartilage</b>: Stiff connective tissue that cushions the joints and supports other tissues.</p>
+        <p><b>Central nervous system</b>: Brain, brainstem, and spinal cord.</p>
+        <p><b>Cerebellum</b>: Part of the brain responsible for coordinated movement.</p>
+        <p><b>Cerebrum</b>: Part of the brain responsible for thought, language, and memory.</p>
+        <p><b>Cervical spine</b>: Top seven vertebrae of the spine, located in the neck.</p>
+        <p><b>Chiari malformation</b>: Condition in which the cerebellar lobes extend into the spinal canal.</p>
+        <p><b>Connective tissue</b>: Group of tissues that link and support other tissues, like bone, cartilage, ligaments, and tendons.</p>
+        <p><b>Contrast medium</b>: Fluid, ingested or injected, to better visualize organs or biological processes on imaging scans.</p>
+        <p><b>Corticosteroids</b>: Class of drugs that mimics hormones produced by the adrenal glands, used to treat inflammation and other disorders.</p>
+        <p><b>Costochondritis</b>: Inflammation of the cartilage connecting the ribs to the sternum.</p>
+        <p><b>Edema</b>: Swelling due to abnormal accumulation of fluid in tissues.</p>
+        <p><b>Endoscopy</b>: Procedure in which a flexible tube equipped with a camera and light is inserted into the body to visualize the interior of organs, like the esophagus and stomach.</p>
+        <p><b>Etiology</b>: Set of causes or origins for a disease.</p>
+        <p><b>Femur</b>: Thigh bone.</p>
+        <p><b>Flare</b>: Worsening of symptoms.</p>
+        <p><b>Gastritis</b>: Inflammation of the stomach lining.</p>
+        <p><b>GI specialist</b>: Abbreviation for <i>gastrointestinal specialist</i>, a physician who specializes in gastrointestinal diseases.</p>
+        <p><b>Heart murmur</b>: Extra sound heard during the heartbeat, which may or may not indicate a problem with the heart.</p>
+        <p><b>Homeostasis</b>: The body's ability to maintain internal equilibrium across blood pressure, temperature, oxygen levels, water levels, and other biological processes.</p>
+        <p><b>Iatrogenic</b>: Illness or complications caused by medical treatment.</p>
+        <p><b>Idiopathic</b>: Condition of indeterminate origin.</p>
+        <p><b>Inflammation</b>: Pain, swelling, heat, and redness in the body.</p><p><b>Laparoscopy</b>: Minimally invasive surgical procedure using small instruments inserted through minor incisions in the skin. The majority of modern-day appendectomies are performed this way.</p>
+        <p><b>Ligament</b>: Band of tissue that connects bones.</p>
+        <p><b>Limbic system</b>: Neurological structures responsible for memory, emotions, motivation, and sexual arousal.</p>
+        <p><b>Lipase</b>: Enzyme secreted by the pancreas that, at elevated levels, can indicate disorders of the pancreas.</p>
+        <p><b>Lymphatic system</b>: System of channels that drains lymph, or excess clear fluid, from tissues and returns it to the bloodstream. If this system is blocked or damaged, lymphatic fluid can build up in tissues, resulting in lymphedema.</p>
+        <p><b>Malaise</b>: General feeling of unwellness that may indicate an underlying disease.</p>
+        <p><b>McBurney's sign</b>: Indicator of acute appendicitis via deep tenderness at McBurney's point, which is located two thirds of the distance from the navel to the right anterior superior iliac spine (the bony hip crest).</p>
+        <p><b>Mitral valve prolapse</b>: Valve anomaly in which one or both of the mitral valve flaps &mdash; which control the unidirectional flow of blood from the left atrium to the left ventricle &mdash; collapse backward into the left atrium. This allows a small amount of blood to regurgitate (leak backward) through the valve.</p>
+        <p><b>Motility</b>: Ability of the gastrointestinal tract to move its contents.</p>
+        <p><b>Multiple sclerosis (MS)</b>: Autoimmune disease where the immune system mistakenly attacks myelin, the substance sheathing nerve fibers.</p> 
+        <p><b>Neuralgia</b>: Pain that travels the path of a nerve, often characterized as burning or stabbing.</p>
+        <p><b>Neutral alignment</b>: Keeping the body in a relaxed, straight line from head to toe while maintaining the natural curves of the spine.</p>
+        <p><b>Nociceptors</b>: Nerve endings that detect pain and transmit pain signals to the central nervous system.</p>
+        <p><b>NSAID</b>: Abbreviation for <i>nonsteroidal anti-inflammatory drug</i>, which reduces inflammation, swelling, and pain. The most common NSAIDs are aspirin, ibuprofen (Advil), and naproxen (Aleve).</p>
+        <p><b>Optic nerve</b>: Nerve fibers that transmit visual impulses from the eye to the brain.</p>
+        <p><b>Orthostatic hypotension</b>: Sudden decrease in blood pressure on sitting down or standing up, causing dizziness or syncope (fainting).</p>
+        <p><b>PA</b>: Abbreviation for <i>physician's assistant</i>.</p>
+        <p><b>Palliative care</b>: Treatment intended to alleviate symptoms without seeking to cure the disease.</p>
+        <p><b>Palpation</b>: Examination of the body via touch or massage.</p>
+        <p><b>Pathology</b>: Underlying anomalies that are characteristic of a disease.</p>
+        <p><b>Pelvic floor</b>: Muscles that support the intestines, bladder, and uterus and play an important role in core strength.</p>
+        <p><b>Pelvic inflammatory disease (PID)</b>: Infection of the female reproductive organs, including the fallopian tubes, uterus, and ovaries, typically caused by sexually transmitted disease.</p>
+        <p><b>Peripheral nervous system</b>: Long nerves branching away from the brain, brainstem, and spinal cord.</p>
+        <p><b>Peripheral neuropathy</b>: Impaired sensation, movement, or function in the peripheral nerves in the arms and/or legs.</p>
+        <p><b>Peristalsis</b>: Involuntary movements of the intestinal muscles that push food through the gastrointestinal tract.</p>
+        <p><b>Peritonitis</b>: Inflammation of the membrane lining the abdominal cavity and surrounding most of the abdominal organs.</p>
+        <p><b>Periumbilical</b>: Region around or behind the navel.</p>
+        <p><b>Plantar wart</b>: Wart on the sole of the foot, caused by a virus, which may indicate a weakening of the immune system.</p>
+        <p><b>Post-exertional malaise (PEM)</b>: Exacerbation of symptoms for an unpredictable length of time following even minor physical or cognitive exertion. Also called post-exertional symptom exacerbation (PESE) or post-exertional neuroimmune exhaustion (PENE). It is a required symptom for myalgic encephalomyelitis.</p>
+        <p><b>Proprioception</b>: The body's ability to sense its orientation in space in relation to itself and objects in its environment.</p>
+        <p><b>PT</b>: Abbreviation for <i>physical therapy</i>.</p>
+        <p><b>Quadriceps</b>: Group of muscles at the front of the thigh, informally abbreviated as <i>quads</i>.</p>
+        <p><b>Range of motion</b>: Extent of flexibility and motion in a joint or muscle, measured by how far the body part can be raised, lowered, or rotated without being forced.</p>
+        <p><b>Rheumatoid arthritis</b>: Autoimmune disease that typically attacks connective tissue in the large and small joints, resulting in joint pain, inflammation, and damage.</p>
+        <p><b>Rovsing's sign</b>: Pain felt in the right lower abdomen on palpation of the left side of the abdomen, indicative of acute appendicitis.</p>
+        <p><b>Sacroiliac region</b>: Region surrounding the large triangular bone at the base of the spine (sacrum) and the lower vertebrae of the spine.</p>
+        <p><b>Sigmoid colon</b>: S-shaped section of the colon that leads to the rectum.</p>
+        <p><b>Subcutaneous tissue</b>: Connective tissue and fat that comprises the deepest layer of the skin.</p>
+        <p><b>Suprapubic region</b>: Region of the lower abdomen between the hips and above the pubic bone.</p>
+        <p><b>Tachycardia</b>: Abnormally rapid heartbeat, typically above 100 beats per minute at rest.</p>
+        <p><b>Taper</b>: Process of gradually decreasing the dose of a medication to avoid symptoms of withdrawal.</p>
+        <p><b>Tendon</b>: Collagen fibers that bind muscle to bone.</p>
+        <p><b>Tendonitis</b>: Inflammation of a tendon, often caused by injury or repetitive stress, which can cause pain and restrict the range of motion of the muscle attached to that tendon.</p>
+        <p><b>Thoracic</b>: Pertaining to the chest region or cavity.</p>
+        <p><b>Tinnitus</b>: Idiopathic ringing in the ears.</p>
+        <p><b>Tissue</b>: Group of cells specialized to perform a certain task.</p>
+        <p><b>Titration</b>: Process of adjusting the dose of a drug over time to minimize adverse effects.</p>
+        <p><b>Tricyclic antidepressant</b>: Class of drugs intended to relieve depression which, at low doses, are effective at treating pain.</p>
+        <p><b>Trigeminal neuralgia</b>: Pain in the trigeminal nerve, the primary sensory nerve of the face.</p>
+      </section>
+    </div>
+    <div class="tab-pane fade" id="theory" role="tabpanel">
+      <section>
+        <p><b>Bodymind</b>: Price (2015) uses <i>bodymind</i> to unify physical and mental processes as concurrent and co-constitutive, in contrast to Cartesian mind-body dualism. Bodymind exists in a crip politics that "get[s] things done . . . by infusing the disruptive potential of disability into normative spaces and interactions" (p. 269). A materialist, feminist disability studies concept, the bodymind is "a sociopolitically constituted and material entity that emerges through both structural (power- and violence-laden) contexts and also individual (specific) experience" (p. 271). Bodymind names the fact that mental states co-determine how physical states manifest (and vice-versa), like quietness, slowness, phantom sensations or agnosia, pseudobulbar affect, stimming, and/or self-injury. Mind-body dualism frames symptoms as one or the other: pain-induced depression is mental; pain-and-depression-induced fatigue is physical. "Bodymind" encourages a more holistic approach, where "mind" isn't a tokenistic addition to "body," but the forging of a language for survival.</p>
+        <p><b>Crip theory</b>: <i>Crip theory</i> is a strand of critical cultural analysis, often deployed in tandem with queer theory and practices, that picks apart what McRuer (2006) calls compulsory able-bodiedness, which prefigures disability as inherently undesirable: "like compulsory heterosexuality, then, compulsory able-bodiedness functions by covering over, with the appearance of choice, a system in which there actually is no choice" (p. 92). We must cultivate normalcy. The only choice is cure. The expectation is that we fix ourselves to become as able-bodyminded as possible. Crip theory imagines more accessible, socially just worlds that aren't defined by compulsory able-bodymindedness, that don't make disability the monster against which society unites. "Crip" has liberatory valences in academic and disability justice spaces, and this project is itself a <b>cripistemology</b> ("crip" epistemology): ways of knowing, being, doing, and surviving that are shaped by the lived experience of disability, not the logic of cure and the siren song of recovery.</p>
+        <p><b>Ghostbody</b>: Dolphin-Krute's (2017) <i>ghostbody</i> is a metaphor for invalidism:</p>
+          <blockquote>the disease, the process, and experience of it, the knowing and experiencing of the permeability of the boundaries of the body. For the ghostbody is the embodiment of this exactly: it embodies all of the boundaries of the body, and nullifies them. No boundary is more solid than the boundary of a ghost, existing everywhere and nowhere at once. But this unsettling is also the effect of the sensing of self as ghost, as inhabitant of a ghostbody. Of the knowledge that those around the ghostbody see a ghost, if they see it at all. (p. 3)</blockquote>
+        <p>She's referring to white Euro-Western ghostlore. Tamil ghosts are more diverse. This project frequently uses <span lang="ta"><i>aavi</i>, <i>pey</i>, and <i>peyththai</i></span> in place of <i>ghostbody</i> to recognize the nuances of ghostbodies of color. <i><span lang="ta">Pey pidichittu</i></span> is the Tamil version of being possessed by a ghostbody.</p>
+        <p class="tab">Ghosts are undesirable in mainstream white society, signs of a broken boundary, to be exorcised when they appear. In Tamil demonology (and Asian ghostlore more broadly), ghosts and demons are native to our plane of existence. For us, there are <span lang="ta">pey</span>, spirits with questionable intentions considered to be malicious. There are <span lang="ta">aavi</span>, wandering spirits of decedents, steam-like, weak but good. There are <span lang="ta">peyththai</span>, hungry ghosts, playful but sinister in their insatiety. There are <span lang="ta">rakhshasas</span>, demigods blessed or cursed with non-normative bodyminds and a knack for illusion and shape-shifting. Each manifests differently: transparent or tangible, the energy of a rolling boil, a new state of matter materializing, perpetual, self-driven transformation. All of them are avatars for chronic pain.</p>
+        <p class="tab">There is an economy to Tamil ghosts. They are the products of <span lang="sa">samsara</span>, the cyclical nature of matter and existence through reincarnation or transmigration. The ghosts and demons left in this cycle are the ones who didn't live well enough to end their <span lang="sa">samsara</span>. The <span lang="ta">aavi</span>, the <span lang="ta">pey</span>, the <span lang="ta">peyththai</span>, the <span lang="ta">rakshasa</span>, they ask you to consider that the chronically ill Tamil woman is a ghost/demon damned by Euro-Western ideas of apparency and acceptability. Where the Tamil ghostbody is perceptible, socially tolerable, desirable, and able to liberate itself, the Euro-Western ghostbody is invisible, unwanted, confined to the location of its traumas, unable to exorcise itself.</p>
+        <p><b>Infra-ordinary</b>: Perec (1974/2008) uses words like <i>infra-ordinary</i> and <i>endotic</i> (in contrast to <i>extraordinary</i> and <i>exotic</i>) to describe the routine everydayness of things and challenge traditional notions of significance. The infra-ordinary consists of the minutiae of daily survival that we don't notice, that purposely don't call attention to themselves. For example, pain that never recedes below a 6 on the self-reporting numeric pain scale is exotic and medically significant to nondisabled people. For the fibromyalgic individual, constant pain rated at 7 or higher is infra-ordinary and endotic. My practices of daily survival, my fleeting, contingent solutions, are similarly so. The infra-ordinary is also a framework, as Perec calls for questions that are "fragmentary, barely indicative of a method, at most of a project. . . they should seem trivial and futile: that's exactly what makes them just as essential, if not more so, as all the other questions by which we've tried in vain to lay hold on our truth" (p. 207). Scholars are supposed to invent theories in everything, but I'm more interested in the pedestrian questions that chronically pained subjects always have to ask, the workarounds we always have to devise.</p>
+        <p><b>Neuroqueer</b>: Yergeau (2019) defines <i>neuroqueer</i> as "ways of being, thinking, and moving that have been typified as marginal, deviant, minoritized, and/or different" (para. 7), pervading all modes of performance and experience. While I am both neurodivergent and queer, I understand the term best as "neurological configurations that exist outside an elusive norm" (para. 7), the embodiment and expression of which (intentionally and unintentionally) don't comply with dominant standards and "queer" various aspects of identity. I prefer it to <i>neurodivergent</i>, which defines itself against neurotypicality. <i>Neuroqueer</i> is Trickster's "third thing" (Hyde, 2010, p. 73), a way to disturb Eurocentric binaries that frame the disabled South Asian bodymind through the colonizer's gaze.</p>
+      </section>
+    </div>
+    <div class="tab-pane fade" id="pem-blends" role="tabpanel">
+      <section>
+        <p><b>Fibro Fog/Brain Fog</b>: <i>Brain fog</i> is the colloquial name for dyscognition, a set of symptoms of a medical condition (like FMS or ME) or treatment (like chemo), involving concentration and calculation difficulty, impaired recall, poor working memory, poor executive function, spatial disorientation, lethologica, aphasia, difficulty absorbing information, a lack of mental clarity, and sluggish thinking. Brain fog is a required symptom of ME. <i>Fibro fog</i> is the species of brain fog that attends chronic pain. I use both phrases constantly, but I know it's as trivializing as saying "chronic fatigue syndrome" instead of "ME." Names like <i>chronic fatigue</i> and <i>brain fog</i> imply universal experiences, but FMS/ME dyscognition continuously and severely impacts language and perceptual processing, visual and verbal memory, and attention and concentration. It's not the slowness that follows an all-nighter, overwork, or stress. It's persistent cortical dysregulation, neuroinflammation, cerebral hypoperfusion, and/or structural brain alterations caused by chronic pain.</p>
+        <p class="tab">Using "brain fog" in a formal project is a choice, one designed to demonstrate the language games that hide me in plain sight, in academic spaces especially. In short, I can admit to my cognitive dysfunction with words that downplay its severity and duration, letting people around me assume I mean the transient, common experience; and if I'm ever called on it, I can point to this disclosure as proof that they already knew I was sick.</p>
+        <p><b>Misability</b>: The <i>dis-</i> in disability frames me, personally, socially, and medically, as deficient. I prefer <span lang="ta">eylum and eylaathu</span>, words that highlight the entanglements between my ethnolinguistic and fibromyalgic identities. One day, over drinks with Mary and Sara, my tipsy medication-stuttering tongue blended "misinterpret" and "disability" into "misability," and it felt like a discovery. A self-definitional move limited to my small crip community, it unmoors the socially/medically aberrant body from automatic lack. Unlike the <i>dis-</i> of disability (and disorder, disbelief, discounting, dismissal), the <i>mis-</i> of misability (and misinterpret, misunderstand, misdiagnose, mistreat) raises the possibility that others err.</p>
+        <p><b>Painervation</b>: Echoing Price's (2015) reasons for preferring <i>bodymind</i>, I'm tired of the "and" between "pain and fatigue." The conjunction joins and divides. In the embodied experience of fibromyalgia and myalgic encephalomyelitis, pain generates, exacerbates, or reduces exhaustion; fatigue amplifies or hushes pain; they exist in an unhappy but cooperative union. At Pilates one day, I'm talking to Sara about pain and enervation and "painervation" slips out instead. We like it. It rolls off the tongue. By formally using it in this dissertation, the doctoral program's test of cognitive ability, I attempt to normalize medication-induced slurring and the lethologica and lethonomia of FMS/ME.</p>
+      </section>
+    </div>
+  </article>
+</div>
+<footer class="footer fixed-bottom align-text-bottom p-1">
+  <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">"This is about the body, the mind, the academy, the clinic, time, and pain"</span> © 2022 by <span property="cc:attributionName">Vyshali Manivannan</span> was created in partial fulfillment of the requirements for a Ph.D. in Communication, Information, and Media from Rutgers University and is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0 <img style="height:12px!important;margin-left:3px;vertical-align:baseline;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" class="img-fluid"><img style="height:12px!important;margin-left:3px;vertical-align:baseline;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" class="img-fluid"><img style="height:12px!important;margin-left:3px;vertical-align:baseline;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" class="img-fluid"><img style="height:12px!important;margin-left:3px;vertical-align:baseline;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" class="img-fluid"></a>. In loving memory of my <span lang="ta">Appa</span>, who taught me <span lang="ta">அறிவுடையார் எல்லா முடையார், <i>arivudaiyar ella mudaiyar</i></span>, the idea that a person with knowledge has everything.
+</footer>
+<script>
+var bar = document.getElementById("bar");
+ window.onscroll = function() {
+  scrollIndicator()
+};
+function scrollIndicator() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = 100;
+if (height > 0) {
+  scrolled = (winScroll / height) * 100;
+}
+bar.style.height = scrolled + "%";
+}
+</script>
+</body>
+</html>
