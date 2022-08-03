@@ -32,28 +32,28 @@ body, html {
   background-image: url("img/bg-main.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   font-size: 1.5vw;
 }
 
 /* Scrollbar */
-  
+
 ::-webkit-scrollbar {
   width: 15px;
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
- 
+
 ::-webkit-scrollbar-thumb {
-  background: #A81C1C; 
+  background: #A81C1C;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #da0f0f; 
+  background: #da0f0f;
 }
 
 /* Dropdown Menu & Navigation */
@@ -155,7 +155,7 @@ a.dropdown-content:hover {
 
 .custom-toggler.navbar-toggler {
   border-color: rgb(168, 28, 28);
-} 
+}
 
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(168,28,28, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -172,7 +172,7 @@ a.dropdown-content:hover {
 #background {
   background-image: url("img/bg-main.jpg");
   height: 100%;
-  opacity: .95;  
+  opacity: .95;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -186,7 +186,7 @@ a.dropdown-content:hover {
   position: relative;
   top: 10%;
   max-width: 90%;
-  border: none; 
+  border: none;
   border-radius: 25px;
   overflow: auto;
 }
@@ -194,6 +194,7 @@ a.dropdown-content:hover {
 .tab {
   text-indent: 2em;
 }
+
 
 /* Progress Bar */
 
@@ -225,6 +226,7 @@ a.dropdown-content:hover {
   margin-bottom: 0;
 }
 
+
 /* Headings */
 
 h1 {
@@ -232,7 +234,7 @@ h1 {
   font-weight: bolder;
   letter-spacing: 5px;
   color: #111;
-  
+
 }
 
 h2 {
@@ -248,6 +250,7 @@ h3 {
   letter-spacing: 5px;
   color: #111;
 }
+
 
 /* Links */
 
@@ -269,7 +272,6 @@ a.disabled {
   padding: 5px;
   color: #B31414;
   text-decoration: none;
-  font-weight: bolder;
   font-size: 1.8vw;
   text-align: right;
 }
@@ -278,7 +280,6 @@ a.disabled:hover {
   color: gray;
   cursor: help;
 }
-
 
 /* Footnotes */
 
@@ -299,40 +300,6 @@ a.fn {
 a.fn:hover {
   text-decoration: underline;
 }
-
-
-
-
-
-
-  figure { 
-    width: 55%;
-    border: thin silver solid;
-    margin: 0.5em;
-    padding: 1em;
-  }
-  
-  figcaption {
-    font-family: "Arima";
-    background-color: #F2F3BF;
-    color: #111;
-    padding: 2px;
-    text-align: left;
-    font-style: normal;
-    font-size: 1.2vw;
-    line-height: 1.5em;
-    height: auto;
-    word-wrap: break-word;
-  }
-  
-  .left {
-    float: left;
-  }
-  
-  .right {
-    float: right;
-  }
-
 
 
 /* Blockquotes */
@@ -361,7 +328,6 @@ blockquote:before {
   text-align: left;
 }
 
-
 hr {
   background-color: #111;
   border: none;
@@ -370,8 +336,42 @@ hr {
 }
 
 
+/* Loader */
 
-  
+.loader {
+  margin: auto;
+  border: 20px solid #EAF0F6;
+  border-radius: 50%;
+  border-top: 20px solid red;
+  width: 18vw;
+  height: 18vw;
+  animation: spinner 4s linear infinite;
+}
+
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/* Pop-Up Modal */
+
+.modal-header {
+  padding: 9px 15px;
+  border-bottom:1px solid #eee;
+  background-color: #f46262;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+}
+
+.modal-dialog {
+  padding-top: 15%;
+  width: 50%;
+}
 
 
 
@@ -394,20 +394,38 @@ ol.a {
 
 
 .divider {
-  width:80px;
+  width: 80px;
   height:auto;
   display:inline-block;
 }
 
-.row { 
-  min-width: 100%;
-  text-align: center; 
+
+
+
+
+
+
+/* Figures */
+
+figure {
+  width: 55%;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 1em;
 }
 
-
-
-
-
+figcaption {
+  font-family: "Arima";
+  background-color: #F2F3BF;
+  color: #111;
+  padding: 2px;
+  text-align: left;
+  font-style: normal;
+  font-size: 1.2vw;
+  line-height: 1.5em;
+  height: auto;
+  word-wrap: break-word;
+}
 
 
 
@@ -453,4 +471,3 @@ aside, .aside {
 .divider {
   width: 1em;
 }
-
