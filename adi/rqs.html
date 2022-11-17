@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>13. Adi: Introduction</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./peyArray.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="shortcut icon" href="../img/site.ico" type="image/x-icon"/>
+  <link rel="stylesheet" type="text/css" href="adi.css">
+  <script>
+    $(document).ready(function(){
+    $("#painModal").modal('show');
+    });
+  </script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm sticky-top">
+    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fa fa-search"></i></a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <form class="navbar-form" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Enna?">
+                </div>
+              </form>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item p-1" href="../how-to-read.html">Instructions for Reading</a></li>
+            <li><a class="dropdown-item p-1" href="../acknowledgments.html">Acknowledgments</a></li>
+            <li><a class="dropdown-item p-1" href="../warnings.html">Content Warnings</a></li>
+            <li><a class="dropdown-item p-1" href="../cast.html">Cast of Characters</a></li>
+            <li><a class="dropdown-item p-1" href="../artist-statement.html">Artist Statement</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Guiding Concepts & Frameworks</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item p-1" href="../lexicon.html">Lexicon</a></li>
+            <li><a class="dropdown-item p-1" href="../decolonial.html">Decolonial Praxis</a></li>
+            <li><a class="dropdown-item p-1" href="../autoethnography.html">Autoethnography</a></li>
+            <li><a class="dropdown-item p-1" href="../fictocriticism.html">Fictocriticism</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a lang="ta" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Kandams</a>
+          <ul class="dropdown-menu">
+            <li><a lang="ta" class="dropdown-item p-1" href="adi.html">Adi</a></li>
+            <li><a lang="ta" class="dropdown-item p-1" href="../vali/vali.html">Vali</a></li>
+            <li><a lang="ta" class="dropdown-item p-1" href="../padam/padam.html">Padam</a></li>
+            <li><a class="dropdown-item p-1" href="../illusio/illusio.html">Illusio</a></li>
+            <li><a class="dropdown-item p-1" href="../misability/misability.html">Misability</a></li>
+            <li><a lang="ta" class="dropdown-item p-1" href="../neethikkathai/neethikkathai.html">Neethikkathai</a></li>
+            <li><a class="dropdown-item p-1" href="../conclusions.html">Conclusions</a></li>
+            <li><a class="dropdown-item p-1" href="../epilogue.html">Epilogue</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Credits</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item p-1" href="../references.html">References</a></li>
+            <li><a class="dropdown-item p-1" href="../collaborators.html">Collaborators</a></li>
+            <li><a class="dropdown-item p-1" href="../how-to-cite.html">How to Cite</a></li>
+          </ul>
+        </li>   
+      </ul>
+      <a class="nav-link-dir" href="../index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a class="nav-link-dir" href="javascript:history.back()"><i class="fa fa-arrow-left"></i> Back</a>
+      <a class="nav-link-dir" href="../vali/intro.html"><i class="fa fa-arrow-right"></i> Next</a>
+      <a class="nav-link-dir" href="#" value="random link!" onClick="randomlinks()"><i class="fas fa-ghost"></i> <span lang="ta">Pey Pidichittu</span></a>
+      <a class="nav-link-dir"></a>
+    </div>
+  </nav>
+<div class="container p-3 my-5">
+  <div id="scrollbar">
+    <div id="bar"></div>
+  </div>
+  <div id="painModal" class="modal fade">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title"><i class="fas fa-skull-crossbones"></i> Warning!</h2>
+          <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">                 
+          <audio id="myAudio" controls style="width:100%">
+          <source src="../audio/warning.wav" type="audio/wav">
+          Your browser does not support the audio element.
+          </audio>
+          <figcaption class="figure-caption pb-2">Audio Description: Warning siren.</figcaption>
+          <p>Pain is infringing upon your ability to remain in this position. To minimize your chances of a fibromyalgia flare, which will consign you to bedrest and painsomnia, stop reading and spend at least an hour on mat stretches and exercises as your body permits: cat-camels, pelvic clocks, bridges, heel slides, chin tucks, and most importantly, lateral breathing.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <article>
+    <h1 class="text-center p-3"><span style="font-family:'Arima'">13.</span> Adi: Introduction</h1>
+    <section>
+      <p>This project theorizes relationships among discourses around the ailing body, biomedical technologies intended to render visible chronic pain, and the compulsory able-bodymindedness of academic culture and its writing conventions. Through analysis of discursive artifacts meant to define my post-illness self, such as imaging reports, pharmaceutical rhetoric, self-monitoring technologies, and academic interchange, I show how techniques and institutions converge to bring the scholar-in-pain under the biomedical and academic gaze.</p>
+      <p>Set against the larger experience of disempowerment in medical and academic institutions, this dissertation locates the chronically pained subject in a network of bodies in which fibromyalgic and nondisabled subjects exist interdependently, undermining discourses that frame pain as an unknowable, alienating, and individuating state and chronic pain as involuntarity, a fate worse than death. Such discourses are perpetuated by the institutionalization of pain management approaches that emphasize (1) ocularity at the expense of the other senses, (2) a standard Euro-Western scientific vocabulary for pain, (3) the conflation of neurotypical disembodied scholarship with authenticity, and (4) radiological, interpretive, and epistemological techniques intended to locate, visualize, and erase fibromyalgia. Consequently, biomedical, academic, and social institutions have increasingly, and problematically, narrowed the parameters for embodied self-experiencing and public articulation of intractable, incurable pain.</p>
+      <p>Methodologically, this research moves through historical and personal events and representations of pain in three ways: (1) fictocritically and autoethnographically, to intervene in master narratives about minoritized experiences; (2) interpretively, through discourse analysis of personal records, ethnographic studies, and mass media artifacts; and (3) phenomenologically, coupling the Euro-Western sensory hierarchy and perceptual theory with the Tamil sensorium to arrive at new understandings of chronic pain that decenter vision.</p>
+      <p>In accordance with Perec's exhortation to "question your tea spoons" (p. 207), I look at a broad set of medical texts, academic communications, technologies, agents, objects, and practices from my quotidian experience of fibromyalgia and from an appendix perforation that serves as a limit case. These materials are a representative selection of medical, academic, and popular constructions of chronic pain and chronic fatigue, taken from a roughly 11-year period beginning in Fall 2006, when I began seeking treatment in my M.F.A. program, and ending in Summer 2017, after I became ABD and had to abruptly quit Savella, one of two patent medications I was taking, because my insurance plan no longer covered it. This timeframe also admits exemplary medical and cultural developments around fibromyalgia, such as the FDA's approval of Lyrica and Savella for the management of chronic pain in 2007 and 2009, respectively; the development of blood tests to "definitively" diagnose fibromyalgia in 2013; and advancements in computerized pattern recognition systems, artificial intelligence, and algorithmic pain measurement from 2017 onward.</p>
+      <p>This time period and the materials therein bring me to four central questions with respect to chronic pain and fatigue as experienced by an Eelam Tamil woman scholar:</p>
+      <ul>
+        <li>What are the medical and rhetorical stakes of care and cure?</li>
+        <li>How do clinical and academic discourses, as well as who circulates them and how, calibrate our expectations around embodiment and cognition, and how much of this rests solely on the faculty of sight?</li>
+        <li>How might we expand the sensorial registers of the clinic and academy to recalibrate hegemonic ideals of wellness and neoliberal responsibilization in relation to chronic pain and how we "do time"?</li>
+        <li>Arising out of the contested negotiations over pained subjectivity by the technologies that aim to contain and constitute it, what are the limitations of sight and language in expressing and representing pain, in clinical practice and scholarly genres?</li>
+      </ul>
+      <p>These questions in turn precipitate a number of related, broader queries. What can a body do? What language does it speak, or what language is used to speak for it? How does the vulnerability and contingency of/in my chronically pained body echo structural flaws in society and mass culture? How do (mostly) accepted alternative practices, like bodywork, acupuncture, and body modification reconstitute the relationships between body and self, pain and personhood, client and hands-on practitioner? And by experimenting with the sensory hierarchy, simulating contingency, and intervening with technology, how might we learn to differently and more expansively express and receive articulations of pain typically unrecognized by both medical technology and the untrained human eye?</p>
+      <p>All of these inquiries align with Perec's (1973) choppy questions. They're channeled across six <span lang="ta">kandams</span>, following <span lang="ta"><i>The Ramavataram's</i></span> narrative divisions, in a move to decenter colonial forms of knowledge and knowledge production and disinvest from citational power structures by normalizing, in its place, frametales, parables, and mythology &mdash; all of which are paramount to a biocultural approach to chronic pain.</p>
+      <p>After an introduction and conceptual framework in <span lang="ta">Adi Kandam</span>, <span lang="ta">Vali Kandam</span> examines the embodied pain of queer South Asian American women in the face of American biomedical ocularcentrism and the humanitarian sensibility's antipathy to demonstrations of pain. Centering my pain in terms of Tamil language, culture, and trauma, it recounts, chronologizes, and dissects portions of my diagnostic journey in light of premodern, modern, and postmodern understandings of pain, respectively characterized in a general sense by religion and superstition, biomedicine and post-anesthetic culture, and affect transmission and biocultural approaches.</p>
+      <p><span lang="ta">Padam Kandam</span> focuses on the technological (re)in(ter)vention in/of non-apparently disabled bodies and the biomedical obsession with calibrating suffering through "objective" biological markers, as well as the predominant discursive framing of chronic pain as a symptom of disease rather than a disease itself. Here, I analyze Western biomedicine's insistent linkage between visual confirmation of chronic pain and its legitimacy and curability, especially given the fallacy of photographic objectivity and the biopolitical imperative to discipline bodyminds that defy easy medical categorization.</p>
+      <p>Illusio <span lang="ta">Kandam</span> examines the creation of a monolingual, stoic, disembodied scholarly subject through discourses of productivity, mind/body dualisms, and model minority tropes. It considers how the social games of the clinic and academy gatekeep epistemological endeavor and the expert class by engaging in discourse analysis of academic interchanges, ultimately arguing for the need for embodied writing in chronic pain scholarship to mitigate the ableist silencing of the academy.</p>
+      <p>In Misability <span lang="ta">Kandam</span>, fibromyalgic fascial cunning, Sanskrit and Tamil mythologies and disability myths, the so-called minor senses, pain scales, complementary and alternative medicine (CAM) therapies, and body modification are harnessed to subvert discourses of power and the primacy of vision in diagnosing, treating, and believing chronic pain. In crafting a democracy of the senses around identifying and existing with chronic pain as an Eelam Tamil, I align phenomenologies of pain with the <span lang="sa">Vedanta</span> concept of maya. To frame this exploration, I suggest "misability" as an organizing principle in decentering and decolonizing these narratives about fibromyalgia &mdash; not negation, not difference, but a constant slide or state of becoming, an intentional/unintentional, wanted/unwanted, visible/invisible, detrimental/advantageous, and expected/shocking misconfiguration of somatosensory, neurological, and temporal processes and intensities. It offers alternative possibilities for meaning-making through self-definition (as misabled), troubling the fetish of the visual to restore what's desirable about fibromyalgia, in particular its cunning, moral dimensions, and world-making feminine power.</p>
+      <p><span lang="ta">Neethikkathai Kandam</span> consists of parables about pain, medical gaslighting, academic ableism, patient responsibilization, and <span lang="sa">Vedanta</span> philosophy. It mingles 44 Tamil and Hindu myths and parables, family stories, theoretical bricolage, and counterstories of chronic pain as part of a decolonial orientation. The number four is significant. Including myself, there are four people in my immediate circle, and four people in my nuclear family. There are four stages of life in Hinduism, four faces of Brahma, four Vedas, four aims. In Greek, the fourth letter, delta (<span lang="el">Δ</span>), signifies change. And in basic numerology, the word <i>medicine</i> computes to <i>44</i>.</p>
+      <p>A work of this scope and style sidesteps a neat ending. In fact, chronicity means there is no ending, underscoring the need for care over cure in imagining pained futurities. Thus, I conclude by compiling outstanding questions about the painervated bodymind's experiences of discrimination, isolation, and exhaustion and outlining its resilience as understood through biocultural and decolonial lenses. Ultimately, this project emphasizes the urgency of reconfiguring FMS and ME subjects as nonexpendable and replacing biomedical logics of cure with the goals of the disability justice movement, which already centers disabled QTBIPOC (Queer, Trans, Black, Indigenous, People of Color): care, access, and collective love.</p>
+      <a href="#" class="disabled" onclick="return false;">(&#8211;115. I Call Myself a Bricoleuse)</a>
+    </section>
+  </article>
+</div>
+<footer class="footer fixed-bottom align-text-bottom p-1">
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">"This is about the body, the mind, the academy, the clinic, time, and pain"</span> © 2022 by <span property="cc:attributionName">Vyshali Manivannan</span> was created in partial fulfillment of the requirements for a Ph.D. in Communication, Information, and Media from Rutgers University and is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0 <img style="height:12px!important;margin-left:3px;vertical-align:baseline;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" class="img-fluid"><img style="height:12px!important;margin-left:3px;vertical-align:baseline;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" class="img-fluid"><img style="height:12px!important;margin-left:3px;vertical-align:baseline;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" class="img-fluid"><img style="height:12px!important;margin-left:3px;vertical-align:baseline;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" class="img-fluid"></a>. In loving memory of my <span lang="ta">Appa</span>, who did not live to see this work finished, and who taught me <span lang="ta">அறிவுடையார் எல்லா முடையார், <i>arivudaiyar ella mudaiyar</i></span>, the idea that a person with knowledge has everything.
+</footer>
+<script>
+var bar = document.getElementById("bar");
+window.onscroll = function() {
+scrollIndicator()
+};
+function scrollIndicator() {
+var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+var scrolled = 100;
+if (height > 0) {
+scrolled = (winScroll / height) * 100;
+}
+bar.style.height = scrolled + "%";
+}
+</script>
+</body>
+</html>

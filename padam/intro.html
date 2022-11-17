@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>42. Introduction: Padam</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./peyArray.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="shortcut icon" href="../img/site.ico" type="image/x-icon"/>
+  <link rel="stylesheet" type="text/css" href="padam.css">
+  <script>
+    $(document).ready(function(){
+    $("#energyModal").modal('show');
+    });
+  </script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm sticky-top">
+    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fa fa-search"></i></a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <form class="navbar-form" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Enna?">
+                </div>
+              </form>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item p-1" href="../how-to-read.html">Instructions for Reading</a></li>
+            <li><a class="dropdown-item p-1" href="../acknowledgments.html">Acknowledgments</a></li>
+            <li><a class="dropdown-item p-1" href="../warnings.html">Content Warnings</a></li>
+            <li><a class="dropdown-item p-1" href="../cast.html">Cast of Characters</a></li>
+            <li><a class="dropdown-item p-1" href="../artist-statement.html">Artist Statement</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Guiding Concepts & Frameworks</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item p-1" href="../lexicon.html">Lexicon</a></li>
+            <li><a class="dropdown-item p-1" href="../decolonial.html">Decolonial Praxis</a></li>
+            <li><a class="dropdown-item p-1" href="../autoethnography.html">Autoethnography</a></li>
+            <li><a class="dropdown-item p-1" href="../fictocriticism.html">Fictocriticism</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a lang="ta" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Kandams</a>
+          <ul class="dropdown-menu">
+            <li><a lang="ta" class="dropdown-item p-1" href="../adi/adi.html">Adi</a></li>
+            <li><a lang="ta" class="dropdown-item p-1" href="../vali/vali.html">Vali</a></li>
+            <li><a lang="ta" class="dropdown-item p-1" href="padam.html">Padam</a></li>
+            <li><a class="dropdown-item p-1" href="../illusio/illusio.html">Illusio</a></li>
+            <li><a class="dropdown-item p-1" href="../misability/misability.html">Misability</a></li>
+            <li><a lang="ta" class="dropdown-item p-1" href="../neethikkathai/neethikkathai.html">Neethikkathai</a></li>
+            <li><a class="dropdown-item p-1" href="../conclusions.html">Conclusions</a></li>
+            <li><a class="dropdown-item p-1" href="../epilogue.html">Epilogue</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Credits</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item p-1" href="../references.html">References</a></li>
+            <li><a class="dropdown-item p-1" href="../collaborators.html">Collaborators</a></li>
+            <li><a class="dropdown-item p-1" href="../how-to-cite.html">How to Cite</a></li>
+          </ul>
+        </li>   
+      </ul>
+      <a class="nav-link-dir" href="../index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a class="nav-link-dir" href="javascript:history.back()"><i class="fa fa-arrow-left"></i> Back</a>
+      <a class="nav-link-dir" href="for-whose-gaze.html"><i class="fa fa-arrow-right"></i> Next</a>
+      <a class="nav-link-dir" href="#" value="random link!" onClick="randomlinks()"><i class="fas fa-ghost"></i> <span lang="ta">Pey Pidichittu</span></a>
+      <a class="nav-link-dir"></a>
+    </div>
+  </nav>
+<div class="container p-3 my-5">
+  <div id="scrollbar">
+    <div id="bar"></div>
+  </div>
+  <div id="energyModal" class="modal fade">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title"><i class="fas fa-skull-crossbones"></i> Warning!</h2>
+          <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">                 
+          <audio id="myAudio" controls style="width:100%">
+          <source src="../audio/warning.wav" type="audio/wav">
+          Your browser does not support the audio element.
+          </audio>
+          <figcaption class="figure-caption pb-2">Audio Description: Warning siren.</figcaption>
+          <p>You are approaching the limits of your energy threshold. Cease all activity for at least 30 minutes or risk post-exertional malaise or a permanent reduction in physical and mental capacity.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <article>
+    <h1 class="text-center p-3"><span style="font-family:'Arima'">42.</span> Introduction: <span lang="ta">Padam</span></h1>
+    <section>
+      <p>Chronic pain and fatigue set a new context for understanding biomedical technology like digital pathology and imaging, which expose the intimate, invisible body to the naked eye to rout out pain. As ocularcentrism is a fact of life in many societies, visual observation is the default mode of understanding the world. Vision dominates how fibromyalgia is medically perceived and assessed, which also determines its legitimacy (Arnheim, 1969; Jay, 1993; Garland-Thomson, 2009). Clinical practitioners, overenthusiastic about the prospect of infallible vision and certainty about a subjective phenomenon like pain, attempt to extricate the other senses as much as possible from digital health technologies, minimizing doctor-to-patient contact and upholding diagnostic imaging as objective truth, as though it's not a human eye interpreting the final digital image. Contradicting the biomedical model of acute pain, the fibromyalgic patient's presentation of chronic pain doesn't hinge on the visual cues expected of a person in pain. Consequently, the patient is often suspected of hypochondria, malingering, or attention- or drug-seeking.</p>
+      <p>I can perform my pain into visibility through disability masquerade, a biocultural emphasis on my <i><span lang="ta">nohuthu, eylaathu, enna seyrathu</span></i> disposition, the exercise of <span lang="grc">metis</span>/<span lang="ta">thanthiram</span> in body language and body modification. But I can't fool imaging technologies into photographing what isn't there.</p>
+      <p>Any discussion of the machinic assemblages that capture my body's interior is predicated on ocularcentrism and photography, whose technical, aesthetic, and social aspects influenced the emergence, spread, and acceptance of optical apparatuses in the clinic. Machine detection and rendering orders the diagnosis, legitimacy, and treatment of fibromyalgia. It begins with the confirmation of the trigger points "legitimated" by the patient's visible expressions, like a grimace or flinch, on palpation or via digital dolometry (Tousignant, 2010). It continues with the search for biomarkers of pain in the blood, despite FMS and ME having no confirmed biomarkers, though certain tests are promising (like EpicGenetics' chemokine and cytokine FM/a test, and indicators like sedimentation rate, antibodies from reactivated viruses, and anomalies in mitochondria, cerebrospinal fluid, gut flora, and/or immunoglobulin). And it concludes with a series of X-rays and MRIs meant to locate physiological aberrations that can be corrected, rehabilitated, cured.</p>
+      <p>From 2006 to 2007, my imaging scans were exclusionary, not affirmative. In 2014, the computerized tomography (CT) scan and transvaginal ultrasound (TVUS) I had to undergo to "prove" the visual presence of an acute crisis inflicted pain and emotional distress and found nothing. Despite being inconclusive, that CT scan &mdash; which showed widespread pelvic inflammation &mdash; earned me admittance to the emergency department. But once there, the TVUS was administered solely because a physician's assistant didn't see an expected display of pain and decided (based on my gender and ethnicity) that my self-reported symptoms were designed to conceal an active sex life and/or pregnancy.</p>
+      <p>Ultimately, imaging scans seeking to diagnose pain, and the medical and academic discourse used to interpret them, determine my functionality and treatment. I couldn't receive surgery without that CT scan, at minimum. I couldn't receive a diagnosis (and therefore medication and a referral for physical therapy) without X-rays and MRIs meant to rule out other musculoskeletal and neurological conditions. However, we find the principle of power not just in one image or individual but "in a certain concerted distribution of bodies, surfaces, lights, gazes in any arrangement whose internal mechanisms produce the relation in which individuals are caught up" (Foucault, 1975/1995, p. 202). Technical rendering and clinical ownership reinforce the invisibility of fibromyalgia, substituting partial data for the whole patient (Alaimo, 2012; Dumit, 2004; Foucault, 1963/1994). This is a medical gaze based not on multisensory perceptual experience and analysis but on recognition of a pattern across pictures meant to apportion the visible within the conceptual configuration of the body (Foucault, 1963/1994, p. 113). The image is absorbed into a complex of practices that generalize about conditions that tend to be individually differentiated.</p>
+      <p>Teston (2017) asks, "How are evidential worlds assembled from bodies in perpetual flux?" (p. 1). In the case of chronic illnesses like fibromyalgia or myalgic encephalomyelitis, diagnoses of exclusion assigned at the discretion of the physician, seeing is tightly coupled with the promise of cure. In the clinic, the evidential world of painervation remains predominantly visual, even though it never really coalesces.</p>
+      <p>In this <span lang="ta">kandam</span>, I ask what it means to be fibromyalgic within these relations, in a matrix of standardized digital evaluations and interventions developed around the notion of pain as an acute, transient symptom, and not a condition itself. I examine how measurement comes with (or abandons) morals. How imaging technologies recast the fibromyalgic body as a frontier to colonize and conquer. How the cryptic chronically ill body unsettles and disperses medical expertise.</p>
+      <p>How, and for whom, the world is given form.</p>
+      <a href="#" class="disabled" onclick="return false;">(&#8211;21. Diagnosing Fibromyalgia)</a>
+      </section>
+    </article>
+</div>
+<footer class="footer fixed-bottom align-text-bottom p-1">
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">"This is about the body, the mind, the academy, the clinic, time, and pain"</span> © 2022 by <span property="cc:attributionName">Vyshali Manivannan</span> was created in partial fulfillment of the requirements for a Ph.D. in Communication, Information, and Media from Rutgers University and is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0 <img style="height:12px!important;margin-left:3px;vertical-align:baseline;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" class="img-fluid"><img style="height:12px!important;margin-left:3px;vertical-align:baseline;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" class="img-fluid"><img style="height:12px!important;margin-left:3px;vertical-align:baseline;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" class="img-fluid"><img style="height:12px!important;margin-left:3px;vertical-align:baseline;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" class="img-fluid"></a>. In loving memory of my <span lang="ta">Appa</span>, who did not live to see this work finished, and who taught me <span lang="ta">அறிவுடையார் எல்லா முடையார், <i>arivudaiyar ella mudaiyar</i></span>, the idea that a person with knowledge has everything.
+</footer>
+<script>
+var bar = document.getElementById("bar");
+window.onscroll = function() {
+scrollIndicator()
+};
+function scrollIndicator() {
+var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+var scrolled = 100;
+if (height > 0) {
+scrolled = (winScroll / height) * 100;
+}
+bar.style.height = scrolled + "%";
+}
+</script>
+</body>
+</html>
