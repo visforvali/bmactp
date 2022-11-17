@@ -267,7 +267,7 @@ a:hover {
   text-decoration: underline;
 }
 
-a.hopscotch {
+a.disabled {
   display: block;
   padding: 5px;
   color: #B31414;
@@ -276,9 +276,15 @@ a.hopscotch {
   text-align: right;
 }
 
-a.hopscotch:hover {
+a.disabled:hover {
   color: gray;
   cursor: help;
+}
+
+a.hopscotch {
+  color: gray;
+  cursor: help;
+  text-decoration: none;
 }
 
 /* Footnotes */
