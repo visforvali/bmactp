@@ -267,7 +267,7 @@ a:hover {
   text-decoration: underline;
 }
 
-a.disabled {
+a.hopscotch {
   display: block;
   padding: 5px;
   color: #B31414;
@@ -276,7 +276,7 @@ a.disabled {
   text-align: right;
 }
 
-a.disabled:hover {
+a.hopscotch:hover {
   color: gray;
   cursor: help;
 }
