@@ -291,7 +291,7 @@ a.hopscotch:hover {
   color: gray;
   background-color: #EFF4EB;
   cursor: not-allowed;
-  text-decoration: none;
+  text-decoration: line-through;
 }
 
 
