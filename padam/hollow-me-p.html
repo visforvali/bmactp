@@ -1,115 +1,117 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0, width=1000">
-
-     <title>Hollow me, hollow me, until only you remain.</title>
-
-     <link rel="shortcut icon" type="image/x-icon" href="../img/site.ico?" />
-
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
-
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-     <link rel="stylesheet" type="text/css" href="padam.css">
-
-     <script>
-      $(document).ready(function(){
- 
-         /*! Fades in page on load */
-         $('body').css('display', 'none');
-         $('body').fadeIn(500);
-         
-         });
-     </script>
-
-  </head>
-
-  <body>
-
-    <div class="dropdown">
-    <button class="dropbtn" onclick="openNav()">☰ About</button>
-      <div class="dropdown-content">
-        <h3><a href="../how-to-read.html">Instructions for Reading</a></h3>
-        <h3><a href="../acknowledgments.html">Acknowledgments</a></h3>
-        <h3><a href="../warnings.html">Content Warnings</a></h3>
-        <h3><a href="../cast.html">Cast of Characters</a></h3>
-        <h3><a href="../artist-statement.html">Artist Statement</a></h3>
-      </div>
+<html lang="en">
+<head>
+  <title>48. Hollow Me, Hollow Me, Until Only You Remain</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./peyArray.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="shortcut icon" href="../img/site.ico" type="image/x-icon"/>
+  <link rel="stylesheet" type="text/css" href="padam.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm sticky-top">
+    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fa fa-search"></i></a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <form class="navbar-form" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Enna?">
+                </div>
+              </form>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item p-1" href="../how-to-read.html">Instructions for Reading</a></li>
+            <li><a class="dropdown-item p-1" href="../acknowledgments.html">Acknowledgments</a></li>
+            <li><a class="dropdown-item p-1" href="../warnings.html">Content Warnings</a></li>
+            <li><a class="dropdown-item p-1" href="../cast.html">Cast of Characters</a></li>
+            <li><a class="dropdown-item p-1" href="../artist-statement.html">Artist Statement</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Guiding Concepts & Frameworks</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item p-1" href="../lexicon.html">Lexicon</a></li>
+            <li><a class="dropdown-item p-1" href="../decolonial.html">Decolonial Praxis</a></li>
+            <li><a class="dropdown-item disabled p-1" href="../autoethnography.html">Autoethnography</a></li>
+            <li><a class="dropdown-item disabled p-1" href="../fictocriticism.html">Fictocriticism</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a lang="ta" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Kandams</a>
+          <ul class="dropdown-menu">
+            <li><a lang="ta" class="dropdown-item p-1" href="../adi/adi.html">Adi</a></li>
+            <li><a lang="ta" class="dropdown-item p-1" href="../vali/vali.html">Vali</a></li>
+            <li><a lang="ta" class="dropdown-item p-1" href="padam.html">Padam</a></li>
+            <li><a class="dropdown-item p-1" href="../illusio/illusio.html">Illusio</a></li>
+            <li><a class="dropdown-item p-1" href="../misability/misability.html">Misability</a></li>
+            <li><a lang="ta" class="dropdown-item p-1" href="../neethikkathai/neethikkathai.html">Neethikkathai</a></li>
+            <li><a class="dropdown-item p-1" href="../conclusions.html">Conclusions</a></li>
+            <li><a class="dropdown-item p-1" href="../epilogue.html">Epilogue</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Credits</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item p-1" href="../references.html">References</a></li>
+            <li><a class="dropdown-item p-1" href="../collaborators.html">Collaborators</a></li>
+            <li><a class="dropdown-item p-1" href="../how-to-cite.html">How to Cite</a></li>
+          </ul>
+        </li>
+      </ul>
+      <a class="nav-link-dir" href="../index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a class="nav-link-dir" href="javascript:history.back()"><i class="fa fa-arrow-left"></i> Back</a>
+      <a class="nav-link-dir" href="../illusio/murder-in-the-dark.html"><i class="fa fa-arrow-right"></i> Next</a>
+      <a class="nav-link-dir" href="#" value="random link!" onClick="randomlinks()"><i class="fas fa-ghost"></i> <span lang="ta">Pey Pidichittu</span></a>
+      <a class="nav-link-dir"></a>
     </div>
-
-    <div class="dropdown">
-      <button class="dropbtn" onclick="openNav()">☰ Guiding Concepts & Frameworks</button>
-      <div class="dropdown-content">
-        <h3><a href="../lexicon.html" target="_blank">Lexicon</a></h3>      
-    <h3><a href="../decolonial.html">Decolonial Praxis</a></h3>      
-    <h3><a href="../autoethnography.html">Autoethnography</a></h3>
-    <h3><a href="../fictocriticism.html">Fictocriticism</a></h3>
-
-
-      </div>
-    </div>
-
-    <div class="dropdown">
-      <button class="dropbtn" onclick="openNav()">☰ <span lang="ta">Kandams</span></button>
-      <div class="dropdown-content">
-        <h3><a href="../adi/adi.html"><span lang="ta">Adi Kandam</span></a></h3>
-        <h3><a href="../vali/vali.html"><span lang="ta">Vali Kandam</span></a></h3>
-        <h3><a href="patam.html"><span lang="ta">Padam Kandam</span></a></h3>
-        <h3><a href="../illusio/illusio.html">Illusio <span lang="ta">Kandam</span></a></h3>
-        <h3><a href="../misability/misability.html">Misability <span lang="ta">Kandam</span></a></h3>   
-        <h3><a href="../nitikkatai/nitikkatai.html"><span lang="ta">Neethikkathai Kandam</span></a></h3>        
-        <h3><a href="../conclusions.html">Conclusions</a></h3>        
-      </div>
-    </div>
-
-    <div class="dropdown">
-      <button class="dropbtn" onclick="openNav()">☰ Credits</button>
-      <div class="dropdown-content">
-        <h3><a href="../references.html">References</a></h3>
-        <h3><a href="../collaborators.html">Collaborators</a></h3>
-        <h3><a href="../how-to-cite.html">How to Cite</a></h3>
-      </div>
-    </div>      
-
-    &nbsp;<a class="nav" href="../index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-    &nbsp;<a class="nav" href="javascript:history.back()"><i class="fa fa-arrow-left"></i> Back</a>
-    &nbsp;<a class="nav" href="../illusio/murder-in-the-dark.html"><i class="fa fa-arrow-right"></i> Next</a>
-    &nbsp;<a class="nav" href="../nitikkatai/privilege.html"><i class="fas fa-ghost"></i> <span lang="ta">Pey Pidichittu</span></a>
-
-    <div class="bgimg">
-    
-     <div class="container">
-              <article>
-
-            <p><div align="center"><h2><span lang="ta">Hollow me, hollow me, until only you remain.</span></h2></div></p>
-
-<div align="center">
-  <img src="img/hollow-me.png" alt="Instructions for Texture Writer game." style="width:800px" class="responsive">
+  </nav>
+<div class="container p-3 my-5">
+  <div id="scrollbar">
+    <div id="bar"></div>
+  </div>
+  <article>
+    <h1 class="text-center p-3"><span style="font-family:'Arima'">48.</span> Hollow Me, Hollow Me, Until Only You Remain</h1>
+    <section>
+      <figure class="figure">
+        <a href="hollow-me.html" target="_blank"><img src="img/hollow-me.png" class="figure-img img-fluid rounded mx-auto d-block mw-100" alt="Screencap of instructions for Texture Writer game."></a>
+        <figcaption class="figure-caption">"Warnings," "How to Read," and "What Happens" are written on a gray background, with a box reading "Tell Me" at the bottom of the page. The instructions say, "Click-and-hold a given verb at the bottom of the page to reveal highlighted text in the body of the page. Drag-and-drop the selected verb to a highlighted word or phrase to change it, add to it, or go to a different page." A companion TTRPG-style booklet, containing a foreword and the complete transcript, may be downloaded <a href="hollow-me-transcript.pdf" class="figure-caption" target="_blank">here</a>. <i>Credit</i>: Vyshali Manivannan, <a class="figure-caption" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>.
+        </figcaption>
+      </figure>
+      <p class="text-center"><a href="hollow-me.html" target="_blank">Rewrite my patient records for me, knowing I'm already damned.</a></p>
+      <a href="#" class="disabled2" onclick="return false;">(&#8211;119. A Tale of Privilege)</a>
+    </section>
+  </article>
 </div>
-    <figcaption><b>Image Description</b>: "Warnings," "How to Read," and "What Happens" are written on a gray background, with a box reading "Tell Me" at the bottom of the page. The instructions say, "Click-and-hold a given verb at the bottom of the page to reveal highlighted text in the body of the page. Drag-and-drop the selected verb to a highlighted word or phrase to change it, add to it, or go to a different page." A companion TTRPG-style booklet, containing a foreword and complete transcript, may be downloaded <a href="hollow-me-transcript.pdf" target="_blank">here</a>.
-    </figcaption>
-
-<br>
-<p><a href="hollow-me.html" target="_blank">Rewrite my patient records for me, knowing I'm already damned.</a></p>
-
-            
-        </article>
-    </div>
-    </div>
-    
-   
-    <p class="footer">
-    
-      <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /> This work is licensed under CC BY-NC-SA 4.0. Site created by Vyshali Manivannan, 2021, with HTML-5 in keeping with accessibility guidelines. This project is best perused on a desktop. In loving memory of my <span lang="ta">Appa</span>, who taught me <span lang="ta">அறிவுடையார் எல்லா முடையார், <i>arivudaiyar ella mudaiyar</i></span>, the idea that a person with knowledge has everything.
-    </p>
-    
-    
-    </body>
-    </html> 
+<footer class="footer fixed-bottom align-text-bottom p-1">
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">"This is about the body, the mind, the academy, the clinic, time, and pain"</span> © 2022 by <span property="cc:attributionName">Vyshali Manivannan</span> was created in partial fulfillment of the requirements for a Ph.D. in Communication, Information, and Media from Rutgers University and is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0 <img style="height:12px!important;margin-left:3px;vertical-align:baseline;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" class="img-fluid"><img style="height:12px!important;margin-left:3px;vertical-align:baseline;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" class="img-fluid"><img style="height:12px!important;margin-left:3px;vertical-align:baseline;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" class="img-fluid"><img style="height:12px!important;margin-left:3px;vertical-align:baseline;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" class="img-fluid"></a>. In loving memory of my <span lang="ta">Appa</span>, who did not live to see this work finished, and who taught me <span lang="ta">அறிவுடையார் எல்லா முடையார், <i>arivudaiyar ella mudaiyar</i></span>, the idea that a person with knowledge has everything.
+</footer>
+<script>
+var bar = document.getElementById("bar");
+window.onscroll = function() {
+scrollIndicator()
+};
+function scrollIndicator() {
+var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+var scrolled = 100;
+if (height > 0) {
+scrolled = (winScroll / height) * 100;
+}
+bar.style.height = scrolled + "%";
+}
+</script>
+</body>
+</html>
