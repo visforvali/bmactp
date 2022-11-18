@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>30. Biomedical Models of Pain</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./peyArray.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="shortcut icon" href="../img/site.ico" type="image/x-icon"/>
+  <link rel="stylesheet" type="text/css" href="vali.css">
+  <script>
+    $(document).ready(function(){
+    $("#fogModal").modal('show');
+    });
+  </script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm sticky-top">
+    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fa fa-search"></i></a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <form class="navbar-form" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Enna?">
+                </div>
+              </form>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item p-1" href="../how-to-read.html">Instructions for Reading</a></li>
+            <li><a class="dropdown-item p-1" href="../acknowledgments.html">Acknowledgments</a></li>
+            <li><a class="dropdown-item p-1" href="../warnings.html">Content Warnings</a></li>
+            <li><a class="dropdown-item p-1" href="../cast.html">Cast of Characters</a></li>
+            <li><a class="dropdown-item p-1" href="../artist-statement.html">Artist Statement</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Guiding Concepts & Frameworks</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item p-1" href="../lexicon.html">Lexicon</a></li>
+            <li><a class="dropdown-item p-1" href="../decolonial.html">Decolonial Praxis</a></li>
+            <li><a class="dropdown-item p-1" href="../autoethnography.html">Autoethnography</a></li>
+            <li><a class="dropdown-item p-1" href="../fictocriticism.html">Fictocriticism</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a lang="ta" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Kandams</a>
+          <ul class="dropdown-menu">
+            <li><a lang="ta" class="dropdown-item p-1" href="../adi/adi.html">Adi</a></li>
+            <li><a lang="ta" class="dropdown-item p-1" href="vali.html">Vali</a></li>
+            <li><a lang="ta" class="dropdown-item p-1" href="../padam/padam.html">Padam</a></li>
+            <li><a class="dropdown-item p-1" href="../illusio/illusio.html">Illusio</a></li>
+            <li><a class="dropdown-item p-1" href="../misability/misability.html">Misability</a></li>
+            <li><a lang="ta" class="dropdown-item p-1" href="../neethikkathai/neethikkathai.html">Neethikkathai</a></li>
+            <li><a class="dropdown-item p-1" href="../conclusions.html">Conclusions</a></li>
+            <li><a class="dropdown-item p-1" href="../epilogue.html">Epilogue</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Credits</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item p-1" href="../references.html">References</a></li>
+            <li><a class="dropdown-item p-1" href="../collaborators.html">Collaborators</a></li>
+            <li><a class="dropdown-item p-1" href="../how-to-cite.html">How to Cite</a></li>
+          </ul>
+        </li>   
+      </ul>
+      <a class="nav-link-dir" href="../index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a class="nav-link-dir" href="javascript:history.back()"><i class="fa fa-arrow-left"></i> Back</a>
+      <a class="nav-link-dir" href="biomed12.html"><i class="fa fa-arrow-right"></i> Next</a>
+      <a class="nav-link-dir" href="#" value="random link!" onClick="randomlinks()"><i class="fas fa-ghost"></i> <span lang="ta">Pey Pidichittu</span></a>
+      <a class="nav-link-dir"></a>
+    </div>
+  </nav>
+<div class="container p-3 my-5">
+  <div id="scrollbar">
+    <div id="bar"></div>
+  </div>
+  <div id="fogModal" class="modal fade">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title"><i class="fas fa-skull-crossbones"></i> Warning!</h2>
+          <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">                 
+          <audio id="myAudio" controls style="width:100%">
+          <source src="../audio/warning.wav" type="audio/wav">
+          Your browser does not support the audio element.
+          </audio>
+          <figcaption class="figure-caption pb-2">Audio Description: Warning siren.</figcaption>
+          <p>The haze of fibro fog is descending upon you, clouding your focus and scattering your attention, the words before you like the residue left by errant fingers in condensation on a bathroom mirror. Continue in this state, and you might not understand or retain anything you read. Then again, even if you stop, you have no way of knowing when (or if) the fog will lift.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <article>
+    <h1 class="text-center p-3"><span style="font-family:'Arima'">30.</span> Biomedical Models of Pain</h1>
+    <section>
+      <nav aria-label="pagination">
+        <ul class="pagination pagination-sm justify-content-end">
+          <li class="page-item"><a class="page-link" href="biomed1.html">1</a></li>
+          <li class="page-item"><a class="page-link" href="biomed2.html">2</a></li>
+          <li class="page-item"><a class="page-link" href="biomed3.html">3</a></li>
+          <li class="page-item"><a class="page-link" href="biomed4.html">4</a></li>
+          <li class="page-item"><a class="page-link" href="biomed5.html">5</a></li>
+          <li class="page-item"><a class="page-link" href="biomed6.html">6</a></li>
+          <li class="page-item"><a class="page-link" href="biomed7.html">7</a></li>
+          <li class="page-item"><a class="page-link" href="biomed8.html">8</a></li>
+          <li class="page-item"><a class="page-link" href="biomed9.html">9</a></li>
+          <li class="page-item"><a class="page-link" href="biomed10.html">10</a></li>
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">11</a>
+          </li> 
+          <li class="page-item"><a class="page-link" href="biomed12.html">12</a></li>
+          <li class="page-item"><a class="page-link" href="biomed13.html">13</a></li>
+          <li class="page-item"><a class="page-link" href="biomed14.html">14</a></li>
+        </ul>
+      </nav>  
+        <p id="top" class="tab">The medical model of disability derives from the positivistic Eurocentric biological sciences, linking a disability diagnosis with aberrations in the patient's bodymind. This model presupposes that disability reduces patients' quality of life and demands correction through medical intervention. The patient's anomalies are perceived as impairments, incapacitation, problems to be solved or masked through medication and surgery.</p>
+        <p class="tab">Through this lens, chronic pain is understood as a fate worse than death, so Western biomedicine insists on curing it, even if the search for a cure enacts physical, emotional, or symbolic violence (Patsavas, 2014; Clare, 2017). Evidence-based medicine constructs me as its object: disease (Mol, 2002). Technically speaking, fibromyalgia is not a disease but a syndrome, a constellation of symptoms whose presentation is highly individualized (Barker, 2005). Unlike other autoimmune diseases like cancer, multiple sclerosis, or Chiari, fibromyalgia remains inscrutable to interrogative techniques like diagnostic imaging (Baszanger, 1998; Smythe, 2009; Mol, 2002). It is confirmed through a process of excluding every other possible condition.</p>
+        <p class="tab">I enter the clinic as a vulnerable patient in 2006 and am clinically diagnosed with fibromyalgia in late 2007. It's conferred like a high honor, but it's not really a reward. I need the sick role to be medically treated, but a pathologized label belongs to the medical model, when acceptance of difference and capacity (<span lang="ta">viththiyaasam and eylum/eylaathu</span>), a relational ethics of communal care, and Tamil resilience are my touchstones for understanding pain (Canagarajah, 2022).</p>
+        <p class="tab">Fibromyalgia is an idiopathic, poorly understood condition that is &mdash; even in preeminent clinics &mdash; still considered an illegitimate diagnosis, stereotyped as the diagnosis of physicians too green to make a "real" determination (Hudson et al., 1985; Evengård et al., 1999; Goldenberg, 1999; Wolfe, 2009). A persistent school of thought around the time of my diagnosis was that fibromyalgia is not a defensible clinical concept, but "a type of illness behavior in which psychologically unstable individuals, having exhausted their ability to cope, become hyperaware of their symptoms and tirelessly seek out physicians willing to give a medical label to a cluster of psychological problems" (Wolfe, 2000, p. 37). Credible conditions may take chronic pain as a symptom, but fibromyalgia has no referent but chronic pain; and pain, as Scarry (1985) observes, resists objectification, is subjective, interior, inarticulate as a dormant volcano.</p>
+        <p class="tab">Questions like "Where does it hurt?" is really a question keyed to acute pain, the type of pain favored by biomedicine and popular culture, the pain that signifies. We think of acute pain as a survival mechanism, a warning that the body is under threat or doing something wrong. When pain is chronic, it becomes so ordinary it ceases to signify (Morris, 1991). Even with its nomadic irruptions, I have habituated a face that aligns with the cult of sensibility to fit into public society, assuming that my physicians will take my words alone as an indication, instead of pinning their hopes on a visible sign or blaming me for being so foolhardy I ignore what pain is "telling" me, when I know it is telling me nothing. It's a truth the clinic is unable to tell me because they don't accept its validity for themselves.</p>
+        <p class="tab">Diseases like fibromyalgia and myalgic encephalomyelitis are complex, dynamic disabilities with fluctuating symptom visibility, no known cure, and varied response to analgesics, which is antithetical to biomedical models of pain.</p>
+        <p class="tab">Chronic pain is additionally confusing and chaotic because of biomedicine's Cartesian split between physiological pain and mental perception (Morris, 1991). My body is fibromyalgic only when it is visible enough to warrant medical attention, and when I am at that level, I am a wastebasket diagnosis for when no one knows what is wrong. This classification is furthered by the biomedical view that pain serves as the body's alarm system, as well as the cultural rhetoric of conquest, the disability trope in which pain is a sensation to be bested (Dolmage, 2014).</p>
+        <p class="tab">The biomedical model works best for patients whose disorders or injuries have a clear and clearly identifiable organic cause. I'm worse than a zebra, which at least is a known animal. I'm a <span lang="ta">sarukumaan</span>, a leaf-pile deer native to South and Southeast Asia and Africa, alien to Western thinking, rabbit-sized, easily camouflaged, easy to miss. <a href="#top" class="fn">&#8617;</a></p>
+      <a href="#" class="disabled mt-3" onclick="return false;">(&#8211; 111. Zebras)</a>
+      </section>
+    </article>
+  </div>
+<footer class="footer fixed-bottom align-text-bottom p-1">
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">"This is about the body, the mind, the academy, the clinic, time, and pain"</span> © 2022 by <span property="cc:attributionName">Vyshali Manivannan</span> was created in partial fulfillment of the requirements for a Ph.D. in Communication, Information, and Media from Rutgers University and is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0 <img style="height:12px!important;margin-left:3px;vertical-align:baseline;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" class="img-fluid"><img style="height:12px!important;margin-left:3px;vertical-align:baseline;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" class="img-fluid"><img style="height:12px!important;margin-left:3px;vertical-align:baseline;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" class="img-fluid"><img style="height:12px!important;margin-left:3px;vertical-align:baseline;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" class="img-fluid"></a>. In loving memory of my <span lang="ta">Appa</span>, who did not live to see this work finished, and who taught me <span lang="ta">அறிவுடையார் எல்லா முடையார், <i>arivudaiyar ella mudaiyar</i></span>, the idea that a person with knowledge has everything.
+</footer>
+<script>
+var bar = document.getElementById("bar");
+window.onscroll = function() {
+scrollIndicator()
+};
+function scrollIndicator() {
+var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+var scrolled = 100;
+if (height > 0) {
+scrolled = (winScroll / height) * 100;
+}
+bar.style.height = scrolled + "%";
+}
+</script>
+</body>
+</html>
