@@ -500,5 +500,5 @@ a.btn-outline:active {
 }
 
 .landing:hover .illusio2 {
-    display: inline-block;
+    display: block;
 }
